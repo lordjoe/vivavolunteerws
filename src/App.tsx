@@ -23,15 +23,10 @@ function asOrganization(me: OrganizationJSON) : Organization {
     ret.logo =  me.logoPage;
     return ret;
 }
-function setOrganizations(sink: PersistentObject,orgs: OrganizationJSON[]) {
-    for (const org of orgs) {
-        sink.organizations.push(org.asOrganization2());
-    }
-    sink.buildFIlters();
-}
-let  first: boolean = true;
+
 
 function setOrganizationsString(sink: PersistentObject, str: string) : void {
+//      let test = str;
       let o  = JSON.parse(str);
       let arr: Array<OrganizationJSON> = o.organizations as Array<OrganizationJSON>;
     for (let i = 0; i < arr.length; i++) {
@@ -47,7 +42,7 @@ function App() {
 
     const urlParams = new URLSearchParams(window.location.search);
     let directory: string = process.env.PUBLIC_URL + "/VivaVolunteersOrganizations.json";
-    let  filename = urlParams.get('filename');
+
 
     // eslint-disable-next-line
    const [dataread, setDataRead] = useState<boolean>(false);

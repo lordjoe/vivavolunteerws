@@ -9,11 +9,7 @@
   margin-bottom: 20px;
 }
 
-.button-row {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
-}
+
 
 .table-row {
   display: flex;
@@ -36,10 +32,7 @@
 }
 
 
-.table-container {
-  flex-grow: 1; /* Allow the bottom component to expand and fill the remaining space */
-  background-color: white;
-}
+
 
 
 

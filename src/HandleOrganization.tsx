@@ -1,8 +1,8 @@
 
-import React, {useEffect, useState} from 'react';
-import {FilenameHolder, OrganizationsHolder} from "./Holders";
+import React from 'react';
+import {FilenameHolder} from "./Holders";
 
-import Organization from "./Organization";
+
 
 
 import  Filters   from './Filters';

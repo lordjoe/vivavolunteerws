@@ -19,12 +19,12 @@ class OrganizationElement extends React.Component<OrganizationHolder> {
     render() {
         let organization = this.props.organization;
         return (
-            <td>
-                <img src={organization.logo} alt={organization.name} className="organization-logo"/>
-                <h3>{organization.name}</h3>
-                <div>
-                    <button className="button" onClick={this.handleSiteClick}>Site</button>
-                    <button className="button" onClick={this.handleVolunteerClick}>Volunteer</button>
+            <td className="organization-element">
+                <img  src={organization.logo} alt={organization.name} className="organization-logo"/>
+                <h3 className="doCenter">{organization.name}</h3>
+                <div className="organization_button-row">
+                    <button className="button-88" onClick={this.handleSiteClick}>Site</button>
+                    <button className="button-88" onClick={this.handleVolunteerClick}>Volunteer</button>
                 </div>
 
             </td>

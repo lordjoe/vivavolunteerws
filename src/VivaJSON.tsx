@@ -54,7 +54,7 @@ export const  JsonString : string =
     "         \"email\": \"tefft@kirklandwa.gov\",\n" +
     "         \"website\": \"https://www.kirklandwa.gov/Resident/Volunteer\",\n" +
     "         \"volunteerPage\": \"https://www.kirklandwa.gov/Government/City-Managers-Office/Volunteer-Opportunities/Volunteer-Application-On-going\",\n" +
-    "         \"logoPage\": \"null\",\n" +
+    "         \"logoPage\": \"https://pbs.twimg.com/media/Fm9DtTPakAEBVLC?format=jpg&name=900x900\",\n" +
     "         \"activities\": [],\n" +
     "         \"courtOrdered\": \"false\"\n" +
     "      },\n" +
@@ -207,7 +207,7 @@ export const  JsonString : string =
     "         \"courtOrdered\": \"false\"\n" +
     "      },\n" +
     "      {\n" +
-    "         \"name\": \"KOA\",\n" +
+    "         \"name\": \"Kirkland Downtown\",\n" +
     "         \"address\": \"440 Central way WA   98033\",\n" +
     "         \"contact\": \"Barbie Conins Young\",\n" +
     "         \"phone\": \"425.822.7066\",\n" +
@@ -249,21 +249,21 @@ export const  JsonString : string =
     "         \"phone\": \"425.828.0422 x229\",\n" +
     "         \"email\": \"jacob@kpccenter.org\",\n" +
     "         \"website\": \"https://www.kpcenter.org\",\n" +
-    "         \"volunteerPage\": \"https://www.kpcenter.org/about/job-opportunities/\",\n" +
+    "         \"volunteerPage\": \"https://k03048.site.kiwanis.org/7h-volunteer/\",\n" +
     "         \"logoPage\": \"https://www.kpcenter.org/wp-content/themes/kpc/images/logo.png\",\n" +
     "         \"activities\": [],\n" +
     "         \"courtOrdered\": \"false\"\n" +
     "      },\n" +
     "      {\n" +
-    "         \"name\": \"Kiwanis Kirkland Sunrisers Cub\",\n" +
+    "         \"name\": \"Kiwanis Kirkland Sunrisers Club\",\n" +
     "         \"address\": \"POBoxl377 Mercer Island, WA  98040\",\n" +
     "         \"contact\": \"CirolMahonev Shular\",\n" +
     "         \"phone\": \"360.434.1377 425.883.6224\",\n" +
     "         \"email\": \"carolmahoneyl2@yahoo.com\",\n" +
-    "         \"website\": \"null\",\n" +
-    "         \"volunteerPage\": \"null\",\n" +
-    "         \"logoPage\": \"null\",\n" +
-    "         \"activities\": [],\n" +
+    "         \"website\": \"https://k03048.site.kiwanis.org\",\n" +
+    "         \"volunteerPage\": \"https://www.kpcenter.org/wp-content/themes/kpc/images/logo.png\",\n" +
+    "         \"logoPage\": \"https://dwyq4sa1lz55y.cloudfront.net/uploads/sites/635/2019/02/logo-2.png\",\n" +
+    "         \"activities\": [ \"senior\"],\n" +
     "         \"courtOrdered\": \"false\"\n" +
     "      },\n" +
     "      {\n" +
@@ -357,7 +357,9 @@ export const  JsonString : string =
     "         \"website\": \"https://ccsww.org/get-help/shelter-homeless-services/new-bethlehem\",\n" +
     "         \"volunteerPage\": \"https://ccsww.org/volunteer/\",\n" +
     "         \"logoPage\": \"https://ccsww.org/wp-content/uploads/2020/03/CCS-CHS-Serving-Logo-white-1400x497.png\",\n" +
-    "         \"activities\": [],\n" +
+    "         \"activities\": [\n" +
+    "               \"children\"\n" +
+        "           ],\n" +
     "         \"courtOrdered\": \"false\"\n" +
     "      },\n" +
     "      {\n" +
@@ -452,7 +454,7 @@ export const  JsonString : string =
     "         \"email\": \"tiffanny@safehorses.org\",\n" +
     "         \"website\": \"https://www.safehorses.org\",\n" +
     "         \"volunteerPage\": \"https://www.safehorses.org/you_can_help/volunteer/\",\n" +
-    "         \"logoPage\": \"https://www.safehorses.org/wp-content/uploads/2018/02/new_header_plain-1.gif\",\n" +
+    "         \"logoPage\": \"https://www.safehorses.org/wp-content/uploads/2010/12/SAFE_logo_Icon.gif\",\n" +
     "         \"activities\": [\n" +
     "            \"animals\"\n" +
     "         ],\n" +

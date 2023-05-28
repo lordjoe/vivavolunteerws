@@ -1,5 +1,4 @@
 import React from 'react';
-import Organization from './Organization';
 import OrganizationElement from './OrganizationElement';
 import { OrganizationsHolder } from './Holders';
 

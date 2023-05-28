@@ -22,13 +22,23 @@ function FilterButtons(props: CallbackHolder) {
             onChange();
         };
 
+    const handleAllButtonClick = () => {
+        let active : Set<string> = PersistentObject.getInstance().activeFilters;
+        if(active.size > 0)
+            active.clear();
+          setButtonState(!buttonStat);
+        onChange();
+    };
+
+
     let set: Set<string> = PersistentObject.getInstance().allFilters;
     let activeSet: Set<string> = PersistentObject.getInstance().activeFilters;
     return (
             <div className={"button-row"}>
                 <button
                     key="all"
-                       className={`button ${ activeSet.size == 0  ? 'in' : 'out'}`}
+                    onClick={() => handleAllButtonClick()}
+                    className={`button ${ activeSet.size == 0  ? 'in' : 'out'}`}
                 >
                  All
                 </button>

@@ -32,15 +32,13 @@ const OrganizationTable: React.FC<OrganizationsHolder> = ({ organizations }) => 
     return (
 
     <div>
-        <div className="table-container">
-            <table className="table-container">
+             <table className="table-container">
                 <tbody>
                 {inner}
                 </tbody>
             </table>
        </div>
-        </div>
-    );
+      );
 };
 
 export default OrganizationTable;

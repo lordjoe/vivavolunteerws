@@ -27,6 +27,7 @@ code {
   justify-content: center;
   height: 600px;
   overflow: auto; /* Enable scrolling if table content exceeds container height */
+
 }
 
 .logo {
@@ -84,6 +85,7 @@ code {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: lightskyblue ;
 }
 
 .organization {
@@ -137,6 +139,15 @@ code {
   margin-bottom: 10px;
 }
 
+.organization_button-row {
+  display: flex;
+  justify-content: left;
+  margin-bottom: 10px;
+}
+
+
+.organization-element {
+}
 
 
 .button {
@@ -153,7 +164,7 @@ code {
 }
 
 .button.out {
-  background-color: red;
+  background-color: lightgrey;
 }
 
 .organizations-table {
@@ -163,23 +174,58 @@ code {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   justify-content: center;
   grid-gap: 10px;
+  background-color: lightskyblue ;
 }
 
 .organizations-table td {
   padding: 10px;
+  background-color: lightskyblue ;
 }
 
 .organization-logo {
+  justify-content: center;
   width: 150px;
   height: 150px;
   object-fit: contain;
   border: black ;
 }
 
+.doCenter {
+  justify-content: center;
+  }
 .table-row {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+/* CSS */
+.button-88 {
+  display: flex;
+  align-items: center;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 0.1em 0.5em 0.3em 0.5em;
+  color: black;
+  background: lightgrey;
+  background: linear-gradient(0deg, rgba(20,167,62,1) 0%, rgba(102,247,113,1) 100%);
+  border: none;
+  box-shadow: 0 0.3em 1.5em -0.3em #14a73e98;
+  letter-spacing: 0.05em;
+  border-radius: 20em;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-88:hover {
+  box-shadow: 0 0.3em 1.5em -0.3em #14a73e98;
+}
+
+.button-88:active {
+  box-shadow: 0 0.3em 1em -0.5em #14a73e98;
 }
 
 @media (min-width: 408px) {
