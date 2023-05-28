@@ -38,7 +38,7 @@ function FilterButtons(props: CallbackHolder) {
                 <button
                     key="all"
                     onClick={() => handleAllButtonClick()}
-                    className={`button ${ activeSet.size == 0  ? 'in' : 'out'}`}
+                    className={`button ${ activeSet.size === 0  ? 'in' : 'out'}`}
                 >
                  All
                 </button>

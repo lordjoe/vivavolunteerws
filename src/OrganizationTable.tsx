@@ -4,6 +4,10 @@ import OrganizationRow from "./OrganizationRow";
 import Organization from "./Organization";
 
 
+  function getRowSize() : number {
+     let size = window.innerWidth;
+     return   (size / 800);
+}
 const OrganizationTable: React.FC<OrganizationsHolder> = ({ organizations }) => {
 
     let ActiveOrganizations: Organization[] = [];
@@ -19,7 +23,7 @@ const OrganizationTable: React.FC<OrganizationsHolder> = ({ organizations }) => 
     for (let i = 0; i < ActiveOrganizations.length; i++) {
         const activeOrganization = ActiveOrganizations[i];
         RowOrganizations.push(activeOrganization);
-        if(row_length++ > 2) {
+        if(row_length++ >= getRowSize()) {
             inner.push(<OrganizationRow organizations={RowOrganizations} />);
             RowOrganizations = [];
             row_length = 0;

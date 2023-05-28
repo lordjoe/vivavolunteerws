@@ -1,7 +1,6 @@
-import {OrganizationHolder, OrganizationsHolder} from "./Holders";
-import React, {ReactNode} from 'react';
-import Organization from "./Organization";
-import OrganizationTable from "./OrganizationTable";
+import {OrganizationHolder } from "./Holders";
+import React    from 'react';
+
 
 class OrganizationElement extends React.Component<OrganizationHolder> {
 
