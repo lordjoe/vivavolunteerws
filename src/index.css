@@ -1,0 +1,205 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Set the page height to the full viewport height */
+  overflow: auto; /* Enable scrolling if content exceeds viewport height */
+}
+
+
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 600px;
+  overflow: auto; /* Enable scrolling if table content exceeds container height */
+}
+
+.logo {
+  height: 1em;
+  margin-right: 0.5em;
+}
+
+.title {
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.title-logo {
+  width: 100px; /* Adjust as needed */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.title_text {
+  font-size: 100px; /* Set the font size to match the logo height */
+  line-height: 100px; /* Set the line height to match the logo height */
+}
+.page-title {
+  margin-top: 0;
+}
+
+.page-logo {
+  width: 200px; /* Adjust as needed */
+  height: auto;
+  margin-top: 10px;
+}
+.title-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.button-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.table-row {
+  display: flex;
+  justify-content: center;
+}
+
+.table-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.organization {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.organization-image {
+  width: 200px; /* Adjust as needed */
+  height: auto;
+}
+
+.organization-name {
+  margin-top: 10px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  width: 150px; /* Adjust as needed */
+  margin-top: 10px;
+}
+
+.button-group a {
+  padding: 5px 10px;
+  background-color: #ddd;
+  text-decoration: none;
+  color: #333;
+}
+
+.container {
+  text-align: center;
+  margin: 20px;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.logo {
+  height: 24px;
+  vertical-align: middle;
+}
+
+.button-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+
+
+.button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  background-color: #ddd;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button.in {
+  background-color: green;
+}
+
+.button.out {
+  background-color: red;
+}
+
+.organizations-table {
+  margin-bottom: 20px;
+  border-collapse: collapse;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-content: center;
+  grid-gap: 10px;
+}
+
+.organizations-table td {
+  padding: 10px;
+}
+
+.organization-logo {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  border: black ;
+}
+
+.table-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 408px) {
+  .organizations-table {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .organizations-table {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .organizations-table {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

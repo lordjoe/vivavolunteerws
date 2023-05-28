@@ -1,0 +1,47 @@
+.App {
+  text-align: center;
+}
+
+.title-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.button-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.table-row {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.org-content {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Set the page height to the full viewport height */
+  overflow: auto; /* Enable scrolling if content exceeds viewport height */
+}
+
+.top-component {
+  flex-shrink: 0; /* Prevent the top component from shrinking */
+  height: 200px; /* Set the desired height for the top component */
+  background-color: white;
+}
+
+
+.table-container {
+  flex-grow: 1; /* Allow the bottom component to expand and fill the remaining space */
+  background-color: white;
+}
+
+
+
+
+

@@ -1,0 +1,553 @@
+{
+ "organizations": [
+
+      {
+         "name": "Attain Housing",
+         "address": "125 Slate Street South  Kirkland, WA   98033",
+         "contact": "Jesse Perrell",
+         "phone": "425.576.9531 X 105",
+         "email": "jesse@attainhousing.org",
+         "website": "https://www.attainhousing.org",
+         "volunteerPage": "https://www.attainhousing.org/how-you-can-help/volunteer",
+         "logoPage": "https://www.attainhousing.org/wp-content/uploads/2019/02/attainlogo.png",
+         "activities": [
+            "housing"
+         ],
+         "courtOrdered": "false"
+      },
+      {
+         "name": "Big Brother. Big Sister.;",
+         "address": "1600South Graham St;  Seattle, WA   98108",
+         "contact": "Michelle Raibback",
+         "phone": "425.894.7231",
+         "email": "info@washingtonadvocacy.org",
+         "website": "https://inspirebig.org",
+         "volunteerPage": "https://inspirebig.org/volunteer-2-2/",
+         "logoPage": "https://inspirebig.org/wp-content/uploads/2019/05/LogoBBBSPS-250.png",
+         "activities": [
+            "children",
+            "recreation"
+         ],
+         "courtOrdered": "false"
+      },
+      {
+         "name": "Catholic Community Services",
+         "address": "100 23rd AVE; Seattle, WA  98144",
+         "contact": "Holliane Monson Griffin Cole",
+         "phone": "206.328.6853",
+         "email": "hollannemo@ccsww.org",
+         "website": "https://ccsww.org ",
+         "volunteerPage": "https://ccsww.org/volunteer/",
+         "logoPage": "https://ccsww.org/wp-content/uploads/2020/03/CCS-CHS-Serving-Logo-white-1400x497.png",
+         "activities": [
+            "housing"
+         ],
+         "courtOrdered": "false"
+      },
+      {
+         "name": "City of Kirkland Volunteers",
+         "address": "123 Fifth AVE; Kirkland,WA   98033",
+         "contact": "Patrick Tefft",
+         "phone": "425.587.3012",
+         "email": "tefft@kirklandwa.gov",
+         "website": "https://www.kirklandwa.gov/Resident/Volunteer",
+         "volunteerPage": "https://www.kirklandwa.gov/Government/City-Managers-Office/Volunteer-Opportunities/Volunteer-Application-On-going",
+         "logoPage": "null",
+         "activities": [],
+         "courtOrdered": "false"
+      },
+      {
+         "name": "Eastside Audubon",
+         "address": "PO Box 3115 Kirkland WA   98083",
+         "contact": "Tereza Marks",
+         "phone": "425.576.8805",
+         "email": "office@eastsideaudubon.org",
+         "website": "https://www.eastsideaudubon.org",
+         "volunteerPage": "https://www.eastsideaudubon.org/volunteer",
+         "logoPage": "https://images.squarespace-cdn.com/content/v1/5a6390338a02c77bf05da4ab/1536454443108-JCZDUPAORSFUCQ2YROR3/eas-logo-white.png?format=1500w",
+         "activities": [
+            "animals"
+         ],
+         "courtOrdered": "false"
+      },
+      {
+         "name": "Eastside Community Thrift Shop",
+         "address": "12421 116th AVE NE Kirkland, WA   98034",
+         "contact": "Gail Schroder",
+         "phone": "425.825.1877",
+         "email": "gailschroder3@gmail.com",
+         "website": "https://www.eastsidecommunityaidthriftshop.org",
+         "volunteerPage": "https://www.eastsidecommunityaidthriftshop.org/volunteer",
+         "logoPage": "https://images.squarespace-cdn.com/content/v1/62117707242ba27822d602e1/dd9efdeb-f3c0-40a6-931f-00085ca74b80/ECATS_Logo_150dpi_BLACKWHITE.png?format=1500w",
+         "activities": [],
+         "courtOrdered": "false"
+      },
+      {
+         "name": "Eastside Neighbors Network",
+         "address": "10005 NE 16tll PL Bellevue, WA 98004",
+         "contact": "Lorene Sheppard",
+         "phone": "425.455.0456",
+         "email": "loreneshr@msn.com",
+         "website": "https://www.eastsideneighborsnetwork.og",
+         "volunteerPage": "https://www.eastsideneighborsnetwork.org/pages/10010-volunteer-opportunities",
+         "logoPage": "null",
+         "activities": [],
+         "courtOrdered": "false"
+      },
+      {
+         "name": "Evergreen Health Volunteer Service",
+         "address": "U040 NE 128th Street;  Kirkland, WA   98034",
+         "contact": "Karen Liebel",
+         "phone": "425.899.2296",
+         "email": "kleliebel@evergreenhealth.com",
+         "website": "https://www.evergreenhealth.com/about-us/volunteer",
+         "volunteerPage": "https://www.evergreenhealth.com/about-us/volunteer/",
+         "logoPage": "https://www.evergreenhealth.com/app/files/public/3684/Evergreen-Logo.svg",
+         "activities": [
+            "health"
+         ],
+         "courtOrdered": "false"
+      },
+      {
+         "name": "Gentiva Hospice",
+         "address": "115 NE 100th St, #210 Seattle,WA98U5",
+         "contact": "Jemilla Goldstein",
+         "phone": "206.525.1090",
+         "email": "jemilla.goldstein@gentivea.com",
+         "website": "https://www.gentivahsp.com",
+         "volunteerPage": "",
+         "logoPage": "https://www.gentivahsp.com/images/logo-kindred-gentiva.svg",
+         "activities": [
+            "health"
+         ],
+         "courtOrdered": "false"
+      },
+      {
+         "name": "Green Kirkland Partnership",
+         "address": "U3FifthAVE; Kirkland, WA   98033",
+         "contact": "Jeremy Jones",
+         "phone": "425.587.3306",
+         "email": "jiones@kirklandwa.gov",
+         "website": "https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Green-Kirkland-Partnership",
+         "volunteerPage": "https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Green-Kirkland-Partnership",
+         "logoPage": "data:image/jpeg;base64,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",
+         "activities": [],
+         "courtOrdered": "false"
+      },
+      {
+         "name": "Habitat for Humanity International",
+         "address": "113013rd AVE NE11555; Seattle, WA  98125",
+         "contact": "Jessie Strauss",
+         "phone": "206.788.4755",
+         "email": "jessie@jessiestrauss..com",
+         "website": "https://www.habitat.org",
+         "volunteerPage": "https://www.habitat.org/volunteer/long-term-opportunities/international",
+         "logoPage": "https://www.habitatskc.org/wp-content/uploads/2022/01/header-home-family-1a-2048x1307.jpg",
+         "activities": [
+            "housing"
+         ],
+         "courtOrdered": "false"
+      },
+      {
+         "name": "Habitat for Humanity Seattle/King County",
+         "address": "560 Naches AVE SW, #110; Renton , WA 98057",
+         "contact": "Nicole Anderson",
+         "phone": "206.577.7919",
+         "email": "nicole.inderson@habitatskc.org",
+         "website": "https://www.habitatskc.org",
+         "volunteerPage": "https://www.habitatskc.org/how-to-help/volunteer/",
+         "logoPage": "https://www.habitatskc.org/wp-content/uploads/2022/01/header-home-family-1a-2048x1307.jpg",
+         "activities": [
+            "housing"
+         ],
+         "courtOrdered": "false"
+      },
+      {
+         "name": "Homeward Pet Adoption Center",
+         "address": "13132 NE 177th PL Woodinville, WA  98072",
+         "contact": "Linda Trendier",
+         "phone": "425.48B.4444",
+         "email": "volunteers@homeward.org",
+         "website": "https://home-home.org",
+         "volunteerPage": "https://home-home.org/contact",
+         "logoPage": "https://home-home.s3.amazonaws.com/wp-content/uploads/2021/08/logo-global.svg",
+         "activities": [
+            "animals"
+         ],
+         "courtOrdered": "false"
+      },
+      {
+         "name": "Hopelink",
+         "address": "8990 154tll Ave NE; WA   98052",
+         "contact": "Liz Waesc:he",
+         "phone": "425.869.6066",
+         "email": "volunteerwithus@hopelink.org",
+         "website": "https://www.hopelink.org/service-center/bellevue",
+         "volunteerPage": "https://www.hopelink.org/take-action/volunteer",
+         "logoPage": "https://www.hopelink.org/sites/default/files/hopelink-logo_0.png",
+         "activities": [
+            "poverty"
+         ],
+         "courtOrdered": "false"
+      },
+      {
+         "name": "Imagine Housing",
+         "address": "10604 NE 38th Place, STE 215; Kirkland, WA  98033",
+         "contact": "NicoleJobson",
+         "phone": "425.576.5190 ex 20",
+         "email": "nicolej@iimaginehousing.org",
+         "website": "https://imaginehousing.org",
+         "volunteerPage": "https://imaginehousing.org/get-involved/volunteer/",
+         "logoPage": "https://imaginehousing.org/wp-content/themes/imagine/assets/imagine-logo.svg",
+         "activities": [
+            "housing"
+         ],
+         "courtOrdered": "false"
+      },
+      {
+         "name": "KOA",
+         "address": "440 Central way WA   98033",
+         "contact": "Barbie Conins Young",
+         "phone": "425.822.7066",
+         "email": "barbiey@kirklanddowntown.org",
+         "website": "https://kirklanddowntown.org",
+         "volunteerPage": "https://kirklanddowntown.org/volunteer/",
+         "logoPage": "https://kirklanddowntown.org/wp-content/uploads/2022/03/kda-logo-white.png",
+         "activities": [],
+         "courtOrdered": "false"
+      },
+      {
+         "name": "Kirkland Boys & Girls Club",
+         "address": "10805124th Ave NE Kirkland, WA   98033",
+         "contact": "Casev Hewes",
+         "phone": "425.250.4755",
+         "email": "chewes@positiveplace.org",
+         "website": "https://positiveplace.org/clubs/kirkland",
+         "volunteerPage": "https://positiveplace.org/volunteer-overview/",
+         "logoPage": "https://positiveplace.org/wp-content/uploads/2022/12/bgckc-logo-600.png",
+         "activities": [],
+         "courtOrdered": "false"
+      },
+      {
+         "name": "Kirkland Kiwanis",
+         "address": "375 Kirkland Ave, #232; Kirkland, WA  98033",
+         "contact": "Hal Bomgardner",
+         "phone": "425.890.7854",
+         "email": "halbom@hotmail.com",
+         "website": "https://k03048.site.kiwanis.org",
+         "volunteerPage": "https://k03048.site.kiwanis.org/7h-volunteer/",
+         "logoPage": "https://dwyq4sa1lz55y.cloudfront.net/uploads/sites/635/2019/02/logo-2.png",
+         "activities": [],
+         "courtOrdered": "false"
+      },
+      {
+         "name": "Kirkland Performing Arts Center",
+         "address": "350 Kirkland Avenue;     Kirkland, WA   98033",
+         "contact": "Jacob Gannon",
+         "phone": "425.828.0422 x229",
+         "email": "jacob@kpccenter.org",
+         "website": "https://www.kpcenter.org",
+         "volunteerPage": "https://www.kpcenter.org/about/job-opportunities/",
+         "logoPage": "https://www.kpcenter.org/wp-content/themes/kpc/images/logo.png",
+         "activities": [],
+         "courtOrdered": "false"
+      },
+      {
+         "name": "Kiwanis Kirkland Sunrisers Cub",
+         "address": "POBoxl377 Mercer Island, WA  98040",
+         "contact": "CirolMahonev Shular",
+         "phone": "360.434.1377 425.883.6224",
+         "email": "carolmahoneyl2@yahoo.com",
+         "website": "null",
+         "volunteerPage": "null",
+         "logoPage": "null",
+         "activities": [],
+         "courtOrdered": "false"
+      },
+      {
+         "name": "Lake Washington Schools Foundation",
+         "address": "POBox83; Redmond, WA  98073",
+         "contact": "Katy Philips",
+         "phone": "425.936.1317",
+         "email": "info@lwsf.org",
+         "website": "https://www.lwsd.org/get-involved/volunteering-in-lwsd/links-volunteer-program",
+         "volunteerPage": "https://www.lwsd.org/get-involved/volunteering-in-lwsd/links-volunteer-program",
+         "logoPage": "https://media.licdn.com/dms/image/C4E0BAQG1d0CNRQKiVg/company-logo_200_200/0/1519856230205?e=2147483647&v=beta&t=ojazNLHtApeMMO5Sfz-axaDZGs0dsfhU5a3Lw_0G3ww",
+         "activities": [
+            "children"
+         ],
+         "courtOrdered": "false"
+      },
+      {
+         "name": "LINKS",
+         "address": "16250 NE 74tli Street; Redmond, WA   98052",
+         "contact": "Victoria Goetze-Nelson",
+         "phone": "425.936.1410",
+         "email": "vgoetzenelson@lwsd.org",
+         "website": "https://www.lwsd.org/get-involved/volunteering-in-lwsd/links-volunteer-program",
+         "volunteerPage": "https://www.lwsd.org/get-involved/volunteering-in-lwsd/links-volunteer-program",
+         "logoPage": "https://media.licdn.com/dms/image/C4E0BAQG1d0CNRQKiVg/company-logo_200_200/0/1519856230205?e=2147483647&v=beta&t=ojazNLHtApeMMO5Sfz-axaDZGs0dsfhU5a3Lw_0G3ww",
+         "activities": [
+            "children"
+         ],
+         "courtOrdered": "false"
+      },
+      {
+         "name": "Mary's Place",
+         "address": "",
+         "contact": "Megan Husko Elspeth Rensema",
+         "phone": "206.621.8474",
+         "email": "megan@marysplaceseattle.org",
+         "website": "https://www.marysplaceseattle.org",
+         "volunteerPage": "https://www.marysplaceseattle.org/volunteer",
+         "logoPage": "https://images.squarespace-cdn.com/content/v1/5b8989d231d4df1bccd7bcc7/277f988a-7b12-4d4d-91b4-e6eb73aa10ad/Mary%27s+Place+Primary+Mark+-+Dawn.png?format=1500w",
+         "activities": [
+            "poverty",
+            "housing",
+            "women"
+         ],
+         "courtOrdered": "false"
+      },
+      {
+         "name": "MEOW cat Rescue",
+         "address": "10600 NE 68th Street, fff; Kirkland, WA  98033",
+         "contact": "Nydia White",
+         "phone": "425.822.6369",
+         "email": "info@meowcatrescue.org",
+         "website": "https://meowcatrescue.org",
+         "volunteerPage": "https://meowcatrescue.org/volunteer/",
+         "logoPage": "https://meowcatrescue.org/wp-content/uploads/2020/09/cropped-LongLogoDraft6c.jpg",
+         "activities": [
+            "animals"
+         ],
+         "courtOrdered": "false"
+      },
+      {
+         "name": "NAMI Eastside",
+         "address": "16225 NE j17th Street,STE A-9 Redmond, WA   98052",
+         "contact": "Michele Meaker Sanpson Ayele",
+         "phone": "425.885.6264",
+         "email": "michele@nami--eastside.org",
+         "website": "https://nami-eastside.org",
+         "volunteerPage": "https://nami-eastside.org/volunteer",
+         "logoPage": "https://nami-eastside.org/wp-content/uploads/2021/07/NAMI-EastsideWA-blue-1line-web.png",
+         "activities": [],
+         "courtOrdered": "false"
+      },
+      {
+         "name": "NAVOS",
+         "address": "1210 SW 136th Street   Burien, WA  98166",
+         "contact": "UsaHav",
+         "phone": "206.933.7196",
+         "email": "Usahav@navos.org",
+         "website": "https://www.navos.org",
+         "volunteerPage": "https://www.navos.org/give-help/",
+         "logoPage": "https://www.navos.org/wp-content/themes/navos/images/logo_navos.png",
+         "activities": [],
+         "courtOrdered": "false"
+      },
+      {
+         "name": "New Bethlehem Day Center",
+         "address": "11920 NE 80St, #100; Kirkland, WA",
+         "contact": "",
+         "phone": "425.679.0350",
+         "email": "volunteer@nbshelter.org",
+         "website": "https://ccsww.org/get-help/shelter-homeless-services/new-bethlehem",
+         "volunteerPage": "https://ccsww.org/volunteer/",
+         "logoPage": "https://ccsww.org/wp-content/uploads/2020/03/CCS-CHS-Serving-Logo-white-1400x497.png",
+         "activities": [],
+         "courtOrdered": "false"
+      },
+      {
+         "name": "Northshore Senior Center",
+         "address": "10201 East Riverside Drive; Bothell, WA  98011",
+         "contact": "",
+         "phone": "425.286.1032",
+         "email": "volunteer@mynorthshore.org",
+         "website": "https://www.northshoreseniorcenter.org/",
+         "volunteerPage": "https://www.northshoreseniorcenter.org/get-involved/",
+         "logoPage": "https://www.northshoreseniorcenter.org/wp-content/uploads/2020/10/NSC_Logo-Color-WEB.gif",
+         "activities": [
+            "seniors"
+         ],
+         "courtOrdered": "false"
+      },
+      {
+         "name": "Nourishing Networks",
+         "address": "",
+         "contact": "Toby Nixon",
+         "phone": "",
+         "email": "toby@tobyunixon.com",
+         "website": "https://www.nourishingnetworks.net/networks/kirkland",
+         "volunteerPage": "https://www.nourishingnetworks.net/kirkland/give-help/food",
+         "logoPage": "https://images.squarespace-cdn.com/content/v1/5f8e26bab5b49172742ed450/f024c41d-1ecc-4558-ace7-440f37a8425a/NOURISHING+NETWORKS+WEBSITE+LOGO+W+BADGE%2C+black+yellow+300dpi.jpg?format=1500w",
+         "activities": [
+            "hunger"
+         ],
+         "courtOrdered": "false"
+      },
+      {
+         "name": "Old friends Cub",
+         "address": "1715 228th AVE SE Samamaish, WA  98075",
+         "contact": "Karen Koenis",
+         "phone": "425.681.9776",
+         "email": "karen@oldfriendsclub.org",
+         "website": "https://www.oldfriendsclub.org",
+         "volunteerPage": "https://www.oldfriendsclub.org/volunteer",
+         "logoPage": "https://static.wixstatic.com/media/a30f82_5c2ab04621bc48259dd0746ba628e6c3~mv2.png/v1/fill/w_118,h_79,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/OFC_logo_trademark.png",
+         "activities": [
+            "seniors"
+         ],
+         "courtOrdered": "false"
+      },
+      {
+         "name": "Red Waggin Rescue",
+         "address": "422 13th Ave West WA   98033",
+         "contact": "Peggy Adams",
+         "phone": "206.335.2826",
+         "email": "connellpetilrescue@gmail.com",
+         "website": "https://www.redwagginrescue.org",
+         "volunteerPage": "https://www.redwagginrescue.org/volunteer",
+         "logoPage": "https://static.wixstatic.com/media/663184_dbb0fee7c8bb411eb70285354cc749ca~mv2.png/v1/crop/x_0,y_22,w_500,h_455/fill/w_119,h_107,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/RWR%20Logo%20TRANSParent%202021.png",
+         "activities": [
+            "animals"
+         ],
+         "courtOrdered": "false"
+      },
+      {
+         "name": "Renewal Foodbank",
+         "address": "15022 Bet-Red Road; Bellevue, WA  98007",
+         "contact": "Rich Bowen",
+         "phone": "425.736.8132",
+         "email": "",
+         "website": "https://renewalfoodbank.org",
+         "volunteerPage": "https://renewalfoodbank.org/get-involved",
+         "logoPage": "https://images.squarespace-cdn.com/content/v1/5f8f511e15794e66f46a0ede/1606424815028-DF7XGZOOUXQDTLHX55ZZ/New+RFB+logo.png?format=1500w",
+         "activities": [
+            "hunger"
+         ],
+         "courtOrdered": "false"
+      },
+      {
+         "name": "Solid Ground RSVP",
+         "address": "1501N 45th Street; Seattle, WA   98103",
+         "contact": "Jan Hancock",
+         "phone": "206.694.6786",
+         "email": "janh@lsolidgrour.d.org",
+         "website": "https://www.solid-ground.org",
+         "volunteerPage": "https://www.solid-ground.org/get-involved/rsvp",
+         "logoPage": "https://www.solid-ground.org/wp-content/uploads/2012/03/sg_logo_3color-1-inch.jpg",
+         "activities": [
+            "housing"
+         ],
+         "courtOrdered": "false"
+      },
+      {
+         "name": "Safe Horses",
+         "address": "10407192nd Ave NE WA   98053",
+         "contact": "Tiffany lindan",
+         "phone": "425.802.4866",
+         "email": "tiffanny@safehorses.org",
+         "website": "https://www.safehorses.org",
+         "volunteerPage": "https://www.safehorses.org/you_can_help/volunteer/",
+         "logoPage": "https://www.safehorses.org/wp-content/uploads/2018/02/new_header_plain-1.gif",
+         "activities": [
+            "animals"
+         ],
+         "courtOrdered": "false"
+      },
+      {
+         "name": "Sno/Klng Long term Care Ombuds Prgm",
+         "address": "PO Box23699 Federal Way, WA  98093",
+         "contact": "Jamie Burrk",
+         "phone": "253.815.8173",
+         "email": "jaimec@mschelps.org",
+         "website": "https://www.waombudsman.org",
+         "volunteerPage": "https://www.waombudsman.org/support-us/volunteer/",
+         "logoPage": "https://www.waombudsman.org/wp-content/uploads/sites/94/2022/03/logo.png",
+         "activities": [
+            "seniors"
+         ],
+         "courtOrdered": "false"
+      },
+      {
+         "name": "Sound Generations",
+         "address": "2208 Second Ave, STE 100; Seattle, WA   98121",
+         "contact": "Omar Vazquez",
+         "phone": "206.748.7588",
+         "email": "omarv@soundgenerations.org",
+         "website": "https://soundgenerations.org/",
+         "volunteerPage": "https://soundgenerations.org/get-involved/volunteer/",
+         "logoPage": "https://soundgenerations.org/wp-content/themes/sg20/img/logo-sound-generations-rev2019_150x113.png",
+         "activities": [],
+         "courtOrdered": "false"
+      },
+      {
+         "name": "Ten Thousand Villages",
+         "address": "6417 Roosevelt Way NE ff201 Seattle, WA 98115",
+         "contact": "Stephanie Cilnek",
+         "phone": "425.273.1924",
+         "email": "seattle@tenthousandvillages.com",
+         "website": "https://www.tenthousandvillages.com",
+         "volunteerPage": "mailto:seattle@tenthousandvillages.com",
+         "logoPage": "https://www.tenthousandvillages.com/media/logo/stores/1/logo-400.png",
+         "activities": [
+            "poverty"
+         ],
+         "courtOrdered": "false"
+      },
+      {
+         "name": "The Sophia Way",
+         "address": "11061NE Second Street; Bellevue, WA   98004",
+         "contact": "Tara Noyes",
+         "phone": "425.463.6285",
+         "email": "volunteer@sophiaway.org",
+         "website": "https://sophiaway.org",
+         "volunteerPage": "https://sophiaway.org/volunteer/",
+         "logoPage": "https://sophiaway.org/wp-content/uploads/2021/02/2021-TSW-logo-for-website-450px.jpg",
+         "activities": [
+            "housing",
+            "women"
+         ],
+         "courtOrdered": "false"
+      },
+      {
+         "name": "Volunteer Service  -  CCS",
+         "address": "11061NE Second Street; Bellevue, WA  98004",
+         "contact": "Griffin Cole",
+         "phone": "425.679.0342",
+         "email": "griffinc@ccsww.org",
+         "website": "https://soundgenerations.org/",
+         "volunteerPage": "https://soundgenerations.org/get-involved/volunteer/",
+         "logoPage": "https://soundgenerations.org/wp-content/themes/sg20/img/logo-sound-generations-rev2019_150x113.png",
+         "activities": [],
+         "courtOrdered": "false"
+      },
+      {
+         "name": "Washington Autism Alliance & Advocacy",
+         "address": "16625 NE 87tli Street, STE A-2; Redmond, VA  98052",
+         "contact": "Jason Ford",
+         "phone": "425.894.7231",
+         "email": "info@washingtonautismadvocacy.org/",
+         "website": "https://washingtonautismadvocacy.org",
+         "volunteerPage": "https://washingtonautismadvocacy.org/volunteer/",
+         "logoPage": "https://washingtonautismadvocacy.org/wp-content/uploads/2020/01/waaa_logo_favicon.png",
+         "activities": [
+            "disability"
+         ],
+         "courtOrdered": "false"
+      },
+      {
+         "name": "Water First",
+         "address": "",
+         "contact": "Kirk Anderson",
+         "phone": "206.297.3024",
+         "email": "klrkar.derson@water1st.org  info®waterlst.orast.orast.oraswater1t.oorg",
+         "website": "https://water1st.org",
+         "volunteerPage": "https://water1st.org/get-involved",
+         "logoPage": "https://water1st.org/wp-content/uploads/2021/06/W1weblogo-01.svg",
+         "activities": [],
+         "courtOrdered": "false"
+      }
+    ]
+}
