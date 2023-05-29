@@ -4,7 +4,7 @@ import OrganizationRow from "./OrganizationRow";
 import Organization from "./Organization";
 
 
-  function getRowSize() : number {
+function getRowSize() : number {
      let size = window.innerWidth;
      return   (size / 800);
 }

@@ -1,4 +1,4 @@
-import React, {useState } from 'react';
+import React, {useEffect, useState} from 'react';
 
 import HandleOrganization from "./HandleOrganization";
 import Organization from "./Organization";
@@ -44,6 +44,8 @@ function App() {
     let directory: string = process.env.PUBLIC_URL + "/VivaVolunteersOrganizations.json";
 
 
+
+
     // eslint-disable-next-line
    const [dataread, setDataRead] = useState<boolean>(false);
 
@@ -52,6 +54,8 @@ function App() {
         // Function implementation for the callback
          setDataRead(!dataread);
     };
+
+    window.addEventListener('resize', doRedraw);
 
     let sink: PersistentObject  = PersistentObject.getInstance()
 

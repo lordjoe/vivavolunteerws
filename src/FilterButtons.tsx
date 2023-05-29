@@ -7,6 +7,11 @@ function isActive(active: Set<string>,s: string) : boolean {
   //      return true;
     return active.has(s);
 }
+
+function getRowSize() : number {
+    let size = window.innerWidth;
+    return   (size / 100);
+}
 function FilterButtons(props: CallbackHolder) {
 
         const [buttonStat , setButtonState] = useState (false)
@@ -33,6 +38,33 @@ function FilterButtons(props: CallbackHolder) {
 
     let set: Set<string> = PersistentObject.getInstance().allFilters;
     let activeSet: Set<string> = PersistentObject.getInstance().activeFilters;
+    if(getRowSize() > set.size) {
+        return (
+            <div className={"button-row"}>
+                <button
+                    key="all"
+                    onClick={() => handleAllButtonClick()}
+                    className={`button ${ activeSet.size === 0  ? 'in' : 'out'}`}
+                >
+                    All
+                </button>
+
+                {Array.from(set).map((value) => (
+                    <button
+                        key={value}
+                        onClick={() => handleButtonClick(value)}
+                        className={`button ${isActive(activeSet,value)  ? 'in' : 'out'}`}
+                    >
+                        {value}
+                    </button>
+                ))}
+            </div>
+        );
+    };
+
+
+
+
     return (
             <div className={"button-row"}>
                 <button
@@ -42,7 +74,7 @@ function FilterButtons(props: CallbackHolder) {
                 >
                  All
                 </button>
-
+                <br/>
                 {Array.from(set).map((value) => (
                     <button
                         key={value}

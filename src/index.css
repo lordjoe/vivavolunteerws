@@ -53,6 +53,12 @@ code {
   font-size: 100px; /* Set the font size to match the logo height */
   line-height: 100px; /* Set the line height to match the logo height */
 }
+
+
+.title_text_small {
+  font-size: 30px; /* Set the font size to match the logo height */
+  line-height: 30px; /* Set the line height to match the logo height */
+}
 .page-title {
   margin-top: 0;
 }
@@ -136,8 +142,11 @@ code {
 .button-row {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   margin-bottom: 10px;
 }
+
+
 
 .organization_button-row {
   display: flex;
