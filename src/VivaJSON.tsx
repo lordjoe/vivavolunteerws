@@ -92,7 +92,7 @@ export const  JsonString : string =
     "         \"email\": \"loreneshr@msn.com\",\n" +
     "         \"website\": \"https://www.eastsideneighborsnetwork.og\",\n" +
     "         \"volunteerPage\": \"https://www.eastsideneighborsnetwork.org/pages/10010-volunteer-opportunities\",\n" +
-    "         \"logoPage\": \"null\",\n" +
+    "         \"logoPage\": \"https://eastsideneighborsnetwork-prod.s3.us-west-1.amazonaws.com/4t19x36oc56a4botu8gne2yfcefm?response-content-disposition=inline%3B%20filename%3D%22ENN_SiteLogo.png%22%3B%20filename%2A%3DUTF-8%27%27ENN_SiteLogo.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJSZQP6GVS43QORHA%2F20230529%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20230529T051807Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=5a457047d85e56ed9896994977e76a65fd4ce4c6c7c784cb2e5dc0e40824fe6c\",\n" +
     "         \"activities\": [],\n" +
     "         \"courtOrdered\": \"false\"\n" +
     "      },\n" +
@@ -137,7 +137,7 @@ export const  JsonString : string =
     "         \"courtOrdered\": \"false\"\n" +
     "      },\n" +
     "      {\n" +
-    "         \"name\": \"Habitat for Humanity International\",\n" +
+    "         \"name\": \"Habitat for Humanity Intl.\",\n" +
     "         \"address\": \"113013rd AVE NE11555; Seattle, WA  98125\",\n" +
     "         \"contact\": \"Jessie Strauss\",\n" +
     "         \"phone\": \"206.788.4755\",\n" +
@@ -151,7 +151,7 @@ export const  JsonString : string =
     "         \"courtOrdered\": \"false\"\n" +
     "      },\n" +
     "      {\n" +
-    "         \"name\": \"Habitat for Humanity Seattle/King County\",\n" +
+    "         \"name\": \"Habitat for Humanity King County\",\n" +
     "         \"address\": \"560 Naches AVE SW, #110; Renton , WA 98057\",\n" +
     "         \"contact\": \"Nicole Anderson\",\n" +
     "         \"phone\": \"206.577.7919\",\n" +
@@ -461,7 +461,7 @@ export const  JsonString : string =
     "         \"courtOrdered\": \"false\"\n" +
     "      },\n" +
     "      {\n" +
-    "         \"name\": \"Sno/Klng Long term Care Ombuds Prgm\",\n" +
+    "         \"name\": \"Long term Care Ombuds Prgm\",\n" +
     "         \"address\": \"PO Box23699 Federal Way, WA  98093\",\n" +
     "         \"contact\": \"Jamie Burrk\",\n" +
     "         \"phone\": \"253.815.8173\",\n" +
@@ -528,7 +528,7 @@ export const  JsonString : string =
     "         \"courtOrdered\": \"false\"\n" +
     "      },\n" +
     "      {\n" +
-    "         \"name\": \"Washington Autism Alliance & Advocacy\",\n" +
+    "         \"name\": \"Washington Autism Alliance\",\n" +
     "         \"address\": \"16625 NE 87tli Street, STE A-2; Redmond, VA  98052\",\n" +
     "         \"contact\": \"Jason Ford\",\n" +
     "         \"phone\": \"425.894.7231\",\n" +
