@@ -40,7 +40,7 @@ function setOrganizationsString(sink: PersistentObject, str: string) : void {
 function App() {
 
 
-    const urlParams = new URLSearchParams(window.location.search);
+//    const urlParams = new URLSearchParams(window.location.search);
     let directory: string = process.env.PUBLIC_URL + "/VivaVolunteersOrganizations.json";
 
 
@@ -57,9 +57,9 @@ function App() {
 
     window.addEventListener('resize', doRedraw);
 
-    let hardCodeJson = JsonString;
+ //   let hardCodeJson = JsonString;
 
-    let sink: PersistentObject  = PersistentObject.getInstance()
+ //   let sink: PersistentObject  = PersistentObject.getInstance()
 
     useEffect(() => {
         const fetchData = async () => {
