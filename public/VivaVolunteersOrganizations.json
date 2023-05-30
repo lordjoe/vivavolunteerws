@@ -88,9 +88,9 @@
          "contact": "Lorene Sheppard",
          "phone": "425.455.0456",
          "email": "loreneshr@msn.com",
-         "website": "https://www.eastsideneighborsnetwork.og",
+         "website": "https://www.eastsideneighborsnetwork.org",
          "volunteerPage": "https://www.eastsideneighborsnetwork.org/pages/10010-volunteer-opportunities",
-         "logoPage": "https://eastsideneighborsnetwork-prod.s3.us-west-1.amazonaws.com/4t19x36oc56a4botu8gne2yfcefm?response-content-disposition=inline%3B%20filename%3D%22ENN_SiteLogo.png%22%3B%20filename%2A%3DUTF-8%27%27ENN_SiteLogo.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJSZQP6GVS43QORHA%2F20230529%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20230529T051807Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=5a457047d85e56ed9896994977e76a65fd4ce4c6c7c784cb2e5dc0e40824fe6c",
+         "logoPage": "/ENN_SiteLogo.png",
          "activities": [],
          "courtOrdered": "false"
       },

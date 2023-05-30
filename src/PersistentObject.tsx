@@ -13,10 +13,13 @@ import organization from "./Organization";
 
       public buildFIlters() : void {
           this.allFilters.clear();
-          for (const argument of this.organizations) {
-              for(const s   of argument.filters)
-                  this.allFilters.add(s);
+          if(this.organizations.length > 0) {
+              for (const argument of this.organizations) {
+                  for(const s   of argument.filters)
+                      this.allFilters.add(s);
+              }
           }
+
       }
 
 
