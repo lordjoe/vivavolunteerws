@@ -1,5 +1,5 @@
 {
- "organizations": [
+   "organizations": [
 
       {
          "name": "Attain Housing",
@@ -52,7 +52,7 @@
          "email": "tefft@kirklandwa.gov",
          "website": "https://www.kirklandwa.gov/Resident/Volunteer",
          "volunteerPage": "https://www.kirklandwa.gov/Government/City-Managers-Office/Volunteer-Opportunities/Volunteer-Application-On-going",
-         "logoPage": "null",
+         "logoPage": "https://pbs.twimg.com/media/Fm9DtTPakAEBVLC?format=jpg&name=900x900",
          "activities": [],
          "courtOrdered": "false"
       },
@@ -90,7 +90,7 @@
          "email": "loreneshr@msn.com",
          "website": "https://www.eastsideneighborsnetwork.og",
          "volunteerPage": "https://www.eastsideneighborsnetwork.org/pages/10010-volunteer-opportunities",
-         "logoPage": "null",
+         "logoPage": "https://eastsideneighborsnetwork-prod.s3.us-west-1.amazonaws.com/4t19x36oc56a4botu8gne2yfcefm?response-content-disposition=inline%3B%20filename%3D%22ENN_SiteLogo.png%22%3B%20filename%2A%3DUTF-8%27%27ENN_SiteLogo.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJSZQP6GVS43QORHA%2F20230529%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20230529T051807Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=5a457047d85e56ed9896994977e76a65fd4ce4c6c7c784cb2e5dc0e40824fe6c",
          "activities": [],
          "courtOrdered": "false"
       },
@@ -135,7 +135,7 @@
          "courtOrdered": "false"
       },
       {
-         "name": "Habitat for Humanity International",
+         "name": "Habitat for Humanity Intl.",
          "address": "113013rd AVE NE11555; Seattle, WA  98125",
          "contact": "Jessie Strauss",
          "phone": "206.788.4755",
@@ -149,7 +149,7 @@
          "courtOrdered": "false"
       },
       {
-         "name": "Habitat for Humanity Seattle/King County",
+         "name": "Habitat for Humanity King County",
          "address": "560 Naches AVE SW, #110; Renton , WA 98057",
          "contact": "Nicole Anderson",
          "phone": "206.577.7919",
@@ -205,7 +205,7 @@
          "courtOrdered": "false"
       },
       {
-         "name": "KOA",
+         "name": "Kirkland Downtown",
          "address": "440 Central way WA   98033",
          "contact": "Barbie Conins Young",
          "phone": "425.822.7066",
@@ -247,21 +247,21 @@
          "phone": "425.828.0422 x229",
          "email": "jacob@kpccenter.org",
          "website": "https://www.kpcenter.org",
-         "volunteerPage": "https://www.kpcenter.org/about/job-opportunities/",
+         "volunteerPage": "https://k03048.site.kiwanis.org/7h-volunteer/",
          "logoPage": "https://www.kpcenter.org/wp-content/themes/kpc/images/logo.png",
          "activities": [],
          "courtOrdered": "false"
       },
       {
-         "name": "Kiwanis Kirkland Sunrisers Cub",
+         "name": "Kiwanis Kirkland Sunrisers Club",
          "address": "POBoxl377 Mercer Island, WA  98040",
          "contact": "CirolMahonev Shular",
          "phone": "360.434.1377 425.883.6224",
          "email": "carolmahoneyl2@yahoo.com",
-         "website": "null",
-         "volunteerPage": "null",
-         "logoPage": "null",
-         "activities": [],
+         "website": "https://k03048.site.kiwanis.org",
+         "volunteerPage": "https://www.kpcenter.org/wp-content/themes/kpc/images/logo.png",
+         "logoPage": "https://dwyq4sa1lz55y.cloudfront.net/uploads/sites/635/2019/02/logo-2.png",
+         "activities": [ "senior"],
          "courtOrdered": "false"
       },
       {
@@ -355,7 +355,9 @@
          "website": "https://ccsww.org/get-help/shelter-homeless-services/new-bethlehem",
          "volunteerPage": "https://ccsww.org/volunteer/",
          "logoPage": "https://ccsww.org/wp-content/uploads/2020/03/CCS-CHS-Serving-Logo-white-1400x497.png",
-         "activities": [],
+         "activities": [
+            "children"
+         ],
          "courtOrdered": "false"
       },
       {
@@ -450,14 +452,14 @@
          "email": "tiffanny@safehorses.org",
          "website": "https://www.safehorses.org",
          "volunteerPage": "https://www.safehorses.org/you_can_help/volunteer/",
-         "logoPage": "https://www.safehorses.org/wp-content/uploads/2018/02/new_header_plain-1.gif",
+         "logoPage": "https://www.safehorses.org/wp-content/uploads/2010/12/SAFE_logo_Icon.gif",
          "activities": [
             "animals"
          ],
          "courtOrdered": "false"
       },
       {
-         "name": "Sno/Klng Long term Care Ombuds Prgm",
+         "name": "Long term Care Ombuds Prgm",
          "address": "PO Box23699 Federal Way, WA  98093",
          "contact": "Jamie Burrk",
          "phone": "253.815.8173",
@@ -524,7 +526,7 @@
          "courtOrdered": "false"
       },
       {
-         "name": "Washington Autism Alliance & Advocacy",
+         "name": "Washington Autism Alliance",
          "address": "16625 NE 87tli Street, STE A-2; Redmond, VA  98052",
          "contact": "Jason Ford",
          "phone": "425.894.7231",
@@ -542,12 +544,12 @@
          "address": "",
          "contact": "Kirk Anderson",
          "phone": "206.297.3024",
-         "email": "klrkanderson@water1st.org  info®waterlst.orast.orast.oraswater1t.org",
+         "email": "klrkar.derson@water1st.org  info®waterlst.orast.orast.oraswater1t.oorg",
          "website": "https://water1st.org",
          "volunteerPage": "https://water1st.org/get-involved",
          "logoPage": "https://water1st.org/wp-content/uploads/2021/06/W1weblogo-01.svg",
          "activities": [],
          "courtOrdered": "false"
       }
-    ]
+   ]
 }

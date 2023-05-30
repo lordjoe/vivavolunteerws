@@ -57,30 +57,31 @@ function App() {
 
     window.addEventListener('resize', doRedraw);
 
+    let hardCodeJson = JsonString;
+
     let sink: PersistentObject  = PersistentObject.getInstance()
 
-    // useEffect(() => {
-    //     const fetchData = async () => {
-    //         try {
-    //             const response = await fetch('/VivaVolunteersOrganizations.json'); // Replace with your desired URL
-    //             if (!response.ok) {
-    //                 throw new Error('Network response was not ok');
-    //             }
-    //             const data = await response.json();
-    //             if (Array.isArray(data.organizations)) {
-    //                 setOrganizations(PersistentObject.getInstance(),data.organizations);
-    //                 setDataRead(true);
-    //                 //           HandleOrganization.setOrganizationsData(PersistentObject.getInstance().organizations);
-    //             }
-    //         } catch (error) {
-    //             console.error('Error fetching data:', error);
-    //         }
-    //     };
-    //     fetchData();
-    // }, []);
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await fetch('/VivaVolunteersOrganizations.json'); // Replace with your desired URL
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                const data: string = await response.text();
+                    setOrganizationsString(PersistentObject.getInstance(),data );
+                    setDataRead(true);
+                    //           HandleOrganization.setOrganizationsData(PersistentObject.getInstance().organizations);
 
-    if(!PersistentObject.hasData())
-         setOrganizationsString(sink, JsonString);
+            } catch (error) {
+                console.error('Error fetching data:', error);
+            }
+        };
+        fetchData();
+    }, []);
+
+ //   if(!PersistentObject.hasData())
+//         setOrganizationsString(sink, JsonString);
 
 
 
