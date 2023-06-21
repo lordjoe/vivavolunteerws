@@ -403,6 +403,20 @@
          "courtOrdered": "false"
       },
       {
+         "name": "Peoples Harm Reduction",
+         "address": "P.O. Box 85038 Seattle, WA  98145",
+         "contact": "info@phra.org",
+         "phone": "(206) 939-2209",
+         "email": "info@phra.org",
+         "website": "https://phra.org",
+         "volunteerPage": "https://phra.org/volunteer",
+         "logoPage": "https://process.filestackapi.com/resize=w:180,h:128/quality=value:70/output=format:webp/cache=expiry:31536000/compress/no_metadata/xY4k7IacROKtpdDMxHLJ",
+         "activities": [
+            "drugs"
+         ],
+         "courtOrdered": "true"
+      },
+      {
          "name": "Red Waggin Rescue",
          "address": "422 13th Ave West WA   98033",
          "contact": "Peggy Adams",
