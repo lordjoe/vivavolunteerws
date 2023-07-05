@@ -57,6 +57,23 @@
          "courtOrdered": "false"
       },
       {
+         "name": "City of Bellevue",
+         "address": "450 110th Avenue NE Bellevue, WA 98004",
+         "contact": "servicefirst@bellevuewa.gov",
+         "phone": "425-452-6800",
+         "email": "servicefirst@bellevuewa.gov",
+         "website": "https://bellevuewa.gov/sites/default/files/media/pdf_document/Volunteer-Resource-Guide.pdf",
+         "volunteerPage": "https://bellevuewa.gov/volunteering",
+         "logoPage": "https://cdn.cybergolf.com/images/2279/City-of-Bellevue.jpg",
+         "activities": [
+            "seniors",
+            "arts",
+            "recreation",
+            "children"
+         ],
+         "courtOrdered": "true"
+      },
+      {
          "name": "Eastside Audubon",
          "address": "PO Box 3115 Kirkland WA   98083",
          "contact": "Tereza Marks",
@@ -527,6 +544,21 @@
          ],
          "courtOrdered": "false"
       },
+      {
+         "name": "University Food Bank",
+         "address": "5017 Roosevelt Way NE Seattle WA 98105",
+         "contact": "https://www.udistrictfoodbank.org/about/contact/",
+         "phone": "(206) 523-7060",
+         "email": "servicefirst@bellevuewa.gov",
+         "website": "https://www.udistrictfoodbank.org",
+         "volunteerPage": "https://www.udistrictfoodbank.org/involved/",
+         "logoPage": "https://www.udistrictfoodbank.org/wp-content/uploads/layout-logo.png",
+         "activities": [
+            "hunger"
+          ],
+         "courtOrdered": "true"
+      },
+
       {
          "name": "Volunteer Service  -  CCS",
          "address": "11061NE Second Street; Bellevue, WA  98004",
