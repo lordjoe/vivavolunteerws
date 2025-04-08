@@ -4,10 +4,12 @@ import HandleOrganization from "./HandleOrganization";
 import Organization from "./Organization";
 import PersistentObject from "./PersistentObject";
 import OrganizationJSON from "./OrganizationJSON";
-import { JsonString } from "./VivaJSON";
+//import { JsonString } from "./VivaJSON";
 import FilterButtons from "./FilterButtons";
 import VivaVolunteers from "./VivaVolunteers";
 
+const VIVA_VOLUNTEERS_JSON = "https://drive.google.com/file/d/1vFYfCjXYBdjgBynUhfbUZP-D9FIF51vS/view?usp=drive_link";
+const VIVA_VOLUNTEERS_JSON2 = "/VivaVolunteersOrganizations.json";
 
 function asOrganization(me: OrganizationJSON) : Organization {
     let ret: Organization = new Organization(me.name);
@@ -41,7 +43,7 @@ function App() {
 
 
 //    const urlParams = new URLSearchParams(window.location.search);
-    let directory: string = process.env.PUBLIC_URL + "/VivaVolunteersOrganizations.json";
+    let directory: string = process.env.PUBLIC_URL + VIVA_VOLUNTEERS_JSON2; //"/VivaVolunteersOrganizations.json";
 
 
 
@@ -64,7 +66,7 @@ function App() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch('/VivaVolunteersOrganizations.json'); // Replace with your desired URL
+                const response = await fetch(VIVA_VOLUNTEERS_JSON2); // Replace with your desired URL
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
                 }
