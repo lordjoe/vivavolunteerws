@@ -1,0 +1,663 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="/vivaicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Web site created using create-react-app">
+    <!--
+     manifest.json provides metadata used when your web app is installed on a
+     user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+   -->
+    <link rel="manifest" href="/manifest.json">
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <script defer="" src="/static/js/bundle.js"></script>
+    <style>body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    code {
+        font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+    }
+
+    .page-container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh; /* Set the page height to the full viewport height */
+        overflow: auto; /* Enable scrolling if content exceeds viewport height */
+    }
+
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 600px;
+        overflow: auto; /* Enable scrolling if table content exceeds container height */
+
+    }
+
+    .logo {
+        height: 1em;
+        margin-right: 0.5em;
+    }
+
+    .title {
+        font-size: 1em;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .title-logo {
+        width: 100px; /* Adjust as needed */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .title_text {
+        font-size: 100px; /* Set the font size to match the logo height */
+        line-height: 100px; /* Set the line height to match the logo height */
+    }
+
+    .page-title {
+        margin-top: 0;
+    }
+
+    .page-logo {
+        width: 200px; /* Adjust as needed */
+        height: auto;
+        margin-top: 10px;
+    }
+
+    .title-row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .button-row {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .table-row {
+        display: flex;
+        justify-content: center;
+    }
+
+    .table-container {
+        flex: 1 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .organization {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .organization-image {
+        width: 200px; /* Adjust as needed */
+        height: auto;
+    }
+
+    .organization-name {
+        margin-top: 10px;
+    }
+
+    .button-group {
+        display: flex;
+        justify-content: space-between;
+        width: 150px; /* Adjust as needed */
+        margin-top: 10px;
+    }
+
+    .button-group a {
+        padding: 5px 10px;
+        background-color: #ddd;
+        text-decoration: none;
+        color: #333;
+    }
+
+    .container {
+        text-align: center;
+        margin: 20px;
+    }
+
+    .title {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .logo {
+        height: 24px;
+        vertical-align: middle;
+    }
+
+    .button-row {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+
+    .button {
+        margin: 0 5px;
+        padding: 5px 10px;
+        background-color: #ddd;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .button.in {
+        background-color: green;
+    }
+
+    .button.out {
+        background-color: lightgrey;
+    }
+
+    .organizations-table {
+        margin-bottom: 20px;
+        border-collapse: collapse;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        justify-content: center;
+        grid-gap: 10px;
+        background-color: lightskyblue;
+    }
+
+    .organizations-table td {
+        padding: 10px;
+        background-color: lightskyblue;
+    }
+
+    .organization-logo {
+        width: 150px;
+        height: 150px;
+        object-fit: contain;
+        border: black;
+    }
+
+    .table-row {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    @media (min-width: 408px) {
+        .organizations-table {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 10px;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .organizations-table {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 10px;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .organizations-table {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    /*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9pbmRleC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxTQUFTO0VBQ1Q7O2NBRVk7RUFDWixtQ0FBbUM7RUFDbkMsa0NBQWtDO0FBQ3BDOztBQUVBO0VBQ0U7YUFDVztBQUNiOztBQUVBO0VBQ0UsYUFBYTtFQUNiLHNCQUFzQjtFQUN0QixhQUFhLEVBQUUsb0RBQW9EO0VBQ25FLGNBQWMsRUFBRSx3REFBd0Q7QUFDMUU7Ozs7QUFJQTtFQUNFLGFBQWE7RUFDYixtQkFBbUI7RUFDbkIsdUJBQXVCO0VBQ3ZCLGFBQWE7RUFDYixjQUFjLEVBQUUsK0RBQStEOztBQUVqRjs7QUFFQTtFQUNFLFdBQVc7RUFDWCxtQkFBbUI7QUFDckI7O0FBRUE7RUFDRSxjQUFjO0VBQ2QsaUJBQWlCO0VBQ2pCLGtCQUFrQjtBQUNwQjs7QUFFQTtFQUNFLFlBQVksRUFBRSxxQkFBcUI7RUFDbkMsYUFBYTtFQUNiLHNCQUFzQjtFQUN0QixtQkFBbUI7RUFDbkIsbUJBQW1CO0FBQ3JCOztBQUVBO0VBQ0UsZ0JBQWdCLEVBQUUsK0NBQStDO0VBQ2pFLGtCQUFrQixFQUFFLGlEQUFpRDtBQUN2RTtBQUNBO0VBQ0UsYUFBYTtBQUNmOztBQUVBO0VBQ0UsWUFBWSxFQUFFLHFCQUFxQjtFQUNuQyxZQUFZO0VBQ1osZ0JBQWdCO0FBQ2xCO0FBQ0E7RUFDRSxhQUFhO0VBQ2IsbUJBQW1CO0VBQ25CLHVCQUF1QjtFQUN2QixtQkFBbUI7QUFDckI7O0FBRUE7RUFDRSxhQUFhO0VBQ2IsdUJBQXVCO0VBQ3ZCLG1CQUFtQjtBQUNyQjs7QUFFQTtFQUNFLGFBQWE7RUFDYix1QkFBdUI7QUFDekI7O0FBRUE7RUFDRSxTQUFPO0VBQ1AsYUFBYTtFQUNiLHVCQUF1QjtFQUN2QixtQkFBbUI7QUFDckI7O0FBRUE7RUFDRSxhQUFhO0VBQ2Isc0JBQXNCO0VBQ3RCLG1CQUFtQjtFQUNuQixtQkFBbUI7QUFDckI7O0FBRUE7RUFDRSxZQUFZLEVBQUUscUJBQXFCO0VBQ25DLFlBQVk7QUFDZDs7QUFFQTtFQUNFLGdCQUFnQjtBQUNsQjs7QUFFQTtFQUNFLGFBQWE7RUFDYiw4QkFBOEI7RUFDOUIsWUFBWSxFQUFFLHFCQUFxQjtFQUNuQyxnQkFBZ0I7QUFDbEI7O0FBRUE7RUFDRSxpQkFBaUI7RUFDakIsc0JBQXNCO0VBQ3RCLHFCQUFxQjtFQUNyQixXQUFXO0FBQ2I7O0FBRUE7RUFDRSxrQkFBa0I7RUFDbEIsWUFBWTtBQUNkOztBQUVBO0VBQ0UsZUFBZTtFQUNmLG1CQUFtQjtBQUNyQjs7QUFFQTtFQUNFLFlBQVk7RUFDWixzQkFBc0I7QUFDeEI7O0FBRUE7RUFDRSxhQUFhO0VBQ2IsdUJBQXVCO0VBQ3ZCLG1CQUFtQjtBQUNyQjs7OztBQUlBO0VBQ0UsYUFBYTtFQUNiLGlCQUFpQjtFQUNqQixzQkFBc0I7RUFDdEIsWUFBWTtFQUNaLGtCQUFrQjtFQUNsQixlQUFlO0FBQ2pCOztBQUVBO0VBQ0UsdUJBQXVCO0FBQ3pCOztBQUVBO0VBQ0UsMkJBQTJCO0FBQzdCOztBQUVBO0VBQ0UsbUJBQW1CO0VBQ25CLHlCQUF5QjtFQUN6QixhQUFhO0VBQ2IsMkRBQTJEO0VBQzNELHVCQUF1QjtFQUN2QixjQUFjO0VBQ2QsK0JBQStCO0FBQ2pDOztBQUVBO0VBQ0UsYUFBYTtFQUNiLCtCQUErQjtBQUNqQzs7QUFFQTtFQUNFLFlBQVk7RUFDWixhQUFhO0VBQ2IsbUJBQW1CO0VBQ25CLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSxhQUFhO0VBQ2IsdUJBQXVCO0VBQ3ZCLGVBQWU7QUFDakI7O0FBRUE7RUFDRTtJQUNFLGFBQWE7SUFDYixxQ0FBcUM7SUFDckMsY0FBYztFQUNoQjtBQUNGOztBQUVBO0VBQ0U7SUFDRSxhQUFhO0lBQ2IscUNBQXFDO0lBQ3JDLGNBQWM7RUFDaEI7QUFDRjs7QUFFQTtFQUNFO0lBQ0UscUNBQXFDO0VBQ3ZDO0FBQ0YiLCJzb3VyY2VzQ29udGVudCI6WyJib2R5IHtcbiAgbWFyZ2luOiAwO1xuICBmb250LWZhbWlseTogLWFwcGxlLXN5c3RlbSwgQmxpbmtNYWNTeXN0ZW1Gb250LCAnU2Vnb2UgVUknLCAnUm9ib3RvJywgJ094eWdlbicsXG4gICAgJ1VidW50dScsICdDYW50YXJlbGwnLCAnRmlyYSBTYW5zJywgJ0Ryb2lkIFNhbnMnLCAnSGVsdmV0aWNhIE5ldWUnLFxuICAgIHNhbnMtc2VyaWY7XG4gIC13ZWJraXQtZm9udC1zbW9vdGhpbmc6IGFudGlhbGlhc2VkO1xuICAtbW96LW9zeC1mb250LXNtb290aGluZzogZ3JheXNjYWxlO1xufVxuXG5jb2RlIHtcbiAgZm9udC1mYW1pbHk6IHNvdXJjZS1jb2RlLXBybywgTWVubG8sIE1vbmFjbywgQ29uc29sYXMsICdDb3VyaWVyIE5ldycsXG4gICAgbW9ub3NwYWNlO1xufVxuXG4ucGFnZS1jb250YWluZXIge1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICBoZWlnaHQ6IDEwMHZoOyAvKiBTZXQgdGhlIHBhZ2UgaGVpZ2h0IHRvIHRoZSBmdWxsIHZpZXdwb3J0IGhlaWdodCAqL1xuICBvdmVyZmxvdzogYXV0bzsgLyogRW5hYmxlIHNjcm9sbGluZyBpZiBjb250ZW50IGV4Y2VlZHMgdmlld3BvcnQgaGVpZ2h0ICovXG59XG5cblxuXG4uY29udGFpbmVyIHtcbiAgZGlzcGxheTogZmxleDtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIGhlaWdodDogNjAwcHg7XG4gIG92ZXJmbG93OiBhdXRvOyAvKiBFbmFibGUgc2Nyb2xsaW5nIGlmIHRhYmxlIGNvbnRlbnQgZXhjZWVkcyBjb250YWluZXIgaGVpZ2h0ICovXG5cbn1cblxuLmxvZ28ge1xuICBoZWlnaHQ6IDFlbTtcbiAgbWFyZ2luLXJpZ2h0OiAwLjVlbTtcbn1cblxuLnRpdGxlIHtcbiAgZm9udC1zaXplOiAxZW07XG4gIGZvbnQtd2VpZ2h0OiBib2xkO1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG5cbi50aXRsZS1sb2dvIHtcbiAgd2lkdGg6IDEwMHB4OyAvKiBBZGp1c3QgYXMgbmVlZGVkICovXG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIG1hcmdpbi1ib3R0b206IDIwcHg7XG59XG5cbi50aXRsZV90ZXh0IHtcbiAgZm9udC1zaXplOiAxMDBweDsgLyogU2V0IHRoZSBmb250IHNpemUgdG8gbWF0Y2ggdGhlIGxvZ28gaGVpZ2h0ICovXG4gIGxpbmUtaGVpZ2h0OiAxMDBweDsgLyogU2V0IHRoZSBsaW5lIGhlaWdodCB0byBtYXRjaCB0aGUgbG9nbyBoZWlnaHQgKi9cbn1cbi5wYWdlLXRpdGxlIHtcbiAgbWFyZ2luLXRvcDogMDtcbn1cblxuLnBhZ2UtbG9nbyB7XG4gIHdpZHRoOiAyMDBweDsgLyogQWRqdXN0IGFzIG5lZWRlZCAqL1xuICBoZWlnaHQ6IGF1dG87XG4gIG1hcmdpbi10b3A6IDEwcHg7XG59XG4udGl0bGUtcm93IHtcbiAgZGlzcGxheTogZmxleDtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIG1hcmdpbi1ib3R0b206IDIwcHg7XG59XG5cbi5idXR0b24tcm93IHtcbiAgZGlzcGxheTogZmxleDtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIG1hcmdpbi1ib3R0b206IDIwcHg7XG59XG5cbi50YWJsZS1yb3cge1xuICBkaXNwbGF5OiBmbGV4O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbn1cblxuLnRhYmxlLWNvbnRhaW5lciB7XG4gIGZsZXg6IDE7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xufVxuXG4ub3JnYW5pemF0aW9uIHtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgbWFyZ2luLWJvdHRvbTogMjBweDtcbn1cblxuLm9yZ2FuaXphdGlvbi1pbWFnZSB7XG4gIHdpZHRoOiAyMDBweDsgLyogQWRqdXN0IGFzIG5lZWRlZCAqL1xuICBoZWlnaHQ6IGF1dG87XG59XG5cbi5vcmdhbml6YXRpb24tbmFtZSB7XG4gIG1hcmdpbi10b3A6IDEwcHg7XG59XG5cbi5idXR0b24tZ3JvdXAge1xuICBkaXNwbGF5OiBmbGV4O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gIHdpZHRoOiAxNTBweDsgLyogQWRqdXN0IGFzIG5lZWRlZCAqL1xuICBtYXJnaW4tdG9wOiAxMHB4O1xufVxuXG4uYnV0dG9uLWdyb3VwIGEge1xuICBwYWRkaW5nOiA1cHggMTBweDtcbiAgYmFja2dyb3VuZC1jb2xvcjogI2RkZDtcbiAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xuICBjb2xvcjogIzMzMztcbn1cblxuLmNvbnRhaW5lciB7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgbWFyZ2luOiAyMHB4O1xufVxuXG4udGl0bGUge1xuICBmb250LXNpemU6IDI0cHg7XG4gIG1hcmdpbi1ib3R0b206IDEwcHg7XG59XG5cbi5sb2dvIHtcbiAgaGVpZ2h0OiAyNHB4O1xuICB2ZXJ0aWNhbC1hbGlnbjogbWlkZGxlO1xufVxuXG4uYnV0dG9uLXJvdyB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICBtYXJnaW4tYm90dG9tOiAxMHB4O1xufVxuXG5cblxuLmJ1dHRvbiB7XG4gIG1hcmdpbjogMCA1cHg7XG4gIHBhZGRpbmc6IDVweCAxMHB4O1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjZGRkO1xuICBib3JkZXI6IG5vbmU7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgY3Vyc29yOiBwb2ludGVyO1xufVxuXG4uYnV0dG9uLmluIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogZ3JlZW47XG59XG5cbi5idXR0b24ub3V0IHtcbiAgYmFja2dyb3VuZC1jb2xvcjogbGlnaHRncmV5O1xufVxuXG4ub3JnYW5pemF0aW9ucy10YWJsZSB7XG4gIG1hcmdpbi1ib3R0b206IDIwcHg7XG4gIGJvcmRlci1jb2xsYXBzZTogY29sbGFwc2U7XG4gIGRpc3BsYXk6IGdyaWQ7XG4gIGdyaWQtdGVtcGxhdGUtY29sdW1uczogcmVwZWF0KGF1dG8tZml0LCBtaW5tYXgoMjAwcHgsIDFmcikpO1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgZ3JpZC1nYXA6IDEwcHg7XG4gIGJhY2tncm91bmQtY29sb3I6IGxpZ2h0c2t5Ymx1ZSA7XG59XG5cbi5vcmdhbml6YXRpb25zLXRhYmxlIHRkIHtcbiAgcGFkZGluZzogMTBweDtcbiAgYmFja2dyb3VuZC1jb2xvcjogbGlnaHRza3libHVlIDtcbn1cblxuLm9yZ2FuaXphdGlvbi1sb2dvIHtcbiAgd2lkdGg6IDE1MHB4O1xuICBoZWlnaHQ6IDE1MHB4O1xuICBvYmplY3QtZml0OiBjb250YWluO1xuICBib3JkZXI6IGJsYWNrIDtcbn1cblxuLnRhYmxlLXJvdyB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICBmbGV4LXdyYXA6IHdyYXA7XG59XG5cbkBtZWRpYSAobWluLXdpZHRoOiA0MDhweCkge1xuICAub3JnYW5pemF0aW9ucy10YWJsZSB7XG4gICAgZGlzcGxheTogZ3JpZDtcbiAgICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IHJlcGVhdCgxLCAxZnIpO1xuICAgIGdyaWQtZ2FwOiAxMHB4O1xuICB9XG59XG5cbkBtZWRpYSAobWluLXdpZHRoOiA3NjhweCkge1xuICAub3JnYW5pemF0aW9ucy10YWJsZSB7XG4gICAgZGlzcGxheTogZ3JpZDtcbiAgICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IHJlcGVhdCgyLCAxZnIpO1xuICAgIGdyaWQtZ2FwOiAxMHB4O1xuICB9XG59XG5cbkBtZWRpYSAobWluLXdpZHRoOiAxMDI0cHgpIHtcbiAgLm9yZ2FuaXphdGlvbnMtdGFibGUge1xuICAgIGdyaWQtdGVtcGxhdGUtY29sdW1uczogcmVwZWF0KDMsIDFmcik7XG4gIH1cbn1cbiJdLCJzb3VyY2VSb290IjoiIn0= */</style>
+</head>
+<body>
+<noscript>You need to enable JavaScript to run this app.</noscript>
+<div id="root">
+    <div class="org-content">
+        <div class="top-component">
+            <div class="title-row"><p class="title_text">Viva Volunteers</p><img src="/Vivalogo.jpg"
+                                                                                 alt="Viva Organization Logo"
+                                                                                 class="title-logo"></div>
+            <br>
+            <div class="button-row">
+                <button class="button in">All</button>
+                <button class="button out">housing</button>
+                <button class="button out">children</button>
+                <button class="button out">recreation</button>
+                <button class="button out">animals</button>
+                <button class="button out">health</button>
+                <button class="button out">poverty</button>
+                <button class="button out">senior</button>
+                <button class="button out">women</button>
+                <button class="button out">seniors</button>
+                <button class="button out">hunger</button>
+                <button class="button out">disability</button>
+            </div>
+        </div>
+        <br>
+        <div class="table-content ">
+            <div>
+                <div class="table-container">
+                    <table class="table-container">
+                        <tbody>
+                        <tr>
+                            <td><img src="https://www.attainhousing.org/wp-content/uploads/2019/02/attainlogo.png"
+                                     alt="Attain Housing" class="organization-logo">
+                                <h3>Attain Housing</h3>
+                                <div>
+                                    <button class="button">Site</button>
+                                    <button class="button">Volunteer</button>
+                                </div>
+                            </td>
+                            <td><img src="https://inspirebig.org/wp-content/uploads/2019/05/LogoBBBSPS-250.png"
+                                     alt="Big Brother. Big Sister.;" class="organization-logo">
+                                <h3>Big Brother. Big Sister.;</h3>
+                                <div>
+                                    <button class="button">Site</button>
+                                    <button class="button">Volunteer</button>
+                                </div>
+                            </td>
+                            <td><img
+                                    src="https://ccsww.org/wp-content/uploads/2020/03/CCS-CHS-Serving-Logo-white-1400x497.png"
+                                    alt="Catholic Community Services" class="organization-logo">
+                                <h3>Catholic Community Services</h3>
+                                <div>
+                                    <button class="button">Site</button>
+                                    <button class="button">Volunteer</button>
+                                </div>
+                            </td>
+                            <td><img src="https://pbs.twimg.com/media/Fm9DtTPakAEBVLC?format=jpg&amp;name=900x900"
+                                     alt="City of Kirkland Volunteers" class="organization-logo">
+                                <h3>City of Kirkland Volunteers</h3>
+                                <div>
+                                    <button class="button">Site</button>
+                                    <button class="button">Volunteer</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img
+                                    src="https://images.squarespace-cdn.com/content/v1/5a6390338a02c77bf05da4ab/1536454443108-JCZDUPAORSFUCQ2YROR3/eas-logo-white.png?format=1500w"
+                                    alt="Eastside Audubon" class="organization-logo">
+                                <h3>Eastside Audubon</h3>
+                                <div>
+                                    <button class="button">Site</button>
+                                    <button class="button">Volunteer</button>
+                                </div>
+                            </td>
+                            <td><img
+                                    src="https://images.squarespace-cdn.com/content/v1/62117707242ba27822d602e1/dd9efdeb-f3c0-40a6-931f-00085ca74b80/ECATS_Logo_150dpi_BLACKWHITE.png?format=1500w"
+                                    alt="Eastside Community Thrift Shop" class="organization-logo">
+                                <h3>Eastside Community Thrift Shop</h3>
+                                <div>
+                                    <button class="button">Site</button>
+                                    <button class="button">Volunteer</button>
+                                </div>
+                            </td>
+                            <td><img src="null" alt="Eastside Neighbors Network" class="organization-logo">
+                                <h3>Eastside Neighbors Network</h3>
+                                <div>
+                                    <button class="button">Site</button>
+                                    <button class="button">Volunteer</button>
+                                </div>
+                            </td>
+                            <td><img src="https://www.evergreenhealth.com/app/files/public/3684/Evergreen-Logo.svg"
+                                     alt="Evergreen Health Volunteer Service" class="organization-logo">
+                                <h3>Evergreen Health Volunteer Service</h3>
+                                <div>
+                                    <button class="button">Site</button>
+                                    <button class="button">Volunteer</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="https://www.gentivahsp.com/images/logo-kindred-gentiva.svg"
+                                     alt="Gentiva Hospice" class="organization-logo">
+                                <h3>Gentiva Hospice</h3>
+                                <div>
+                                    <button class="button">Site</button>
+                                    <button class="button">Volunteer</button>
+                                </div>
+                            </td>
+                            <td><img
+                                    src="data:image/jpeg;base64,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"
+                                    alt="Green Kirkland Partnership" class="organization-logo">
+                                <h3>Green Kirkland Partnership</h3>
+                                <div>
+                                    <button class="button">Site</button>
+                                    <button class="button">Volunteer</button>
+                                </div>
+                            </td>
+                            <td><img
+                                    src="https://www.habitatskc.org/wp-content/uploads/2022/01/header-home-family-1a-2048x1307.jpg"
+                                    alt="Habitat for Humanity International" class="organization-logo">
+                                <h3>Habitat for Humanity International</h3>
+                                <div>
+                                    <button class="button">Site</button>
+                                    <button class="button">Volunteer</button>
+                                </div>
+                            </td>
+                            <td><img
+                                    src="https://www.habitatskc.org/wp-content/uploads/2022/01/header-home-family-1a-2048x1307.jpg"
+                                    alt="Habitat for Humanity Seattle/King County" class="organization-logo">
+                                <h3>Habitat for Humanity Seattle/King County</h3>
+                                <div>
+                                    <button class="button">Site</button>
+                                    <button class="button">Volunteer</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="https://home-home.s3.amazonaws.com/wp-content/uploads/2021/08/logo-global.svg"
+                                     alt="Homeward Pet Adoption Center" class="organization-logo">
+                                <h3>Homeward Pet Adoption Center</h3>
+                                <div>
+                                    <button class="button">Site</button>
+                                    <button class="button">Volunteer</button>
+                                </div>
+                            </td>
+                            <td><img src="https://www.hopelink.org/sites/default/files/hopelink-logo_0.png"
+                                     alt="Hopelink" class="organization-logo">
+                                <h3>Hopelink</h3>
+                                <div>
+                                    <button class="button">Site</button>
+                                    <button class="button">Volunteer</button>
+                                </div>
+                            </td>
+                            <td><img src="https://imaginehousing.org/wp-content/themes/imagine/assets/imagine-logo.svg"
+                                     alt="Imagine Housing" class="organization-logo">
+                                <h3>Imagine Housing</h3>
+                                <div>
+                                    <button class="button">Site</button>
+                                    <button class="button">Volunteer</button>
+                                </div>
+                            </td>
+                            <td><img src="https://kirklanddowntown.org/wp-content/uploads/2022/03/kda-logo-white.png"
+                                     alt="Kirkland Downtown" class="organization-logo">
+                                <h3>Kirkland Downtown</h3>
+                                <div>
+                                    <button class="button">Site</button>
+                                    <button class="button">Volunteer</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="https://positiveplace.org/wp-content/uploads/2022/12/bgckc-logo-600.png"
+                                     alt="Kirkland Boys &amp; Girls Club" class="organization-logo">
+                                <h3>Kirkland Boys &amp; Girls Club</h3>
+                                <div>
+                                    <button class="button">Site</button>
+                                    <button class="button">Volunteer</button>
+                                </div>
+                            </td>
+                            <td><img src="https://dwyq4sa1lz55y.cloudfront.net/uploads/sites/635/2019/02/logo-2.png"
+                                     alt="Kirkland Kiwanis" class="organization-logo">
+                                <h3>Kirkland Kiwanis</h3>
+                                <div>
+                                    <button class="button">Site</button>
+                                    <button class="button">Volunteer</button>
+                                </div>
+                            </td>
+                            <td><img src="https://www.kpcenter.org/wp-content/themes/kpc/images/logo.png"
+                                     alt="Kirkland Performing Arts Center" class="organization-logo">
+                                <h3>Kirkland Performing Arts Center</h3>
+                                <div>
+                                    <button class="button">Site</button>
+                                    <button class="button">Volunteer</button>
+                                </div>
+                            </td>
+                            <td><img src="https://dwyq4sa1lz55y.cloudfront.net/uploads/sites/635/2019/02/logo-2.png"
+                                     alt="Kiwanis Kirkland Sunrisers Club" class="organization-logo">
+                                <h3>Kiwanis Kirkland Sunrisers Club</h3>
+                                <div>
+                                    <button class="button">Site</button>
+                                    <button class="button">Volunteer</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img
+                                    src="https://media.licdn.com/dms/image/C4E0BAQG1d0CNRQKiVg/company-logo_200_200/0/1519856230205?e=2147483647&amp;v=beta&amp;t=ojazNLHtApeMMO5Sfz-axaDZGs0dsfhU5a3Lw_0G3ww"
+                                    alt="Lake Washington Schools Foundation" class="organization-logo">
+                                <h3>Lake Washington Schools Foundation</h3>
+                                <div>
+                                    <button class="button">Site</button>
+                                    <button class="button">Volunteer</button>
+                                </div>
+                            </td>
+                            <td><img
+                                    src="https://media.licdn.com/dms/image/C4E0BAQG1d0CNRQKiVg/company-logo_200_200/0/1519856230205?e=2147483647&amp;v=beta&amp;t=ojazNLHtApeMMO5Sfz-axaDZGs0dsfhU5a3Lw_0G3ww"
+                                    alt="LINKS" class="organization-logo">
+                                <h3>LINKS</h3>
+                                <div>
+                                    <button class="button">Site</button>
+                                    <button class="button">Volunteer</button>
+                                </div>
+                            </td>
+                            <td><img
+                                    src="https://images.squarespace-cdn.com/content/v1/5b8989d231d4df1bccd7bcc7/277f988a-7b12-4d4d-91b4-e6eb73aa10ad/Mary%27s+Place+Primary+Mark+-+Dawn.png?format=1500w"
+                                    alt="Mary's Place" class="organization-logo">
+                                <h3>Mary's Place</h3>
+                                <div>
+                                    <button class="button">Site</button>
+                                    <button class="button">Volunteer</button>
+                                </div>
+                            </td>
+                            <td><img
+                                    src="https://meowcatrescue.org/wp-content/uploads/2020/09/cropped-LongLogoDraft6c.jpg"
+                                    alt="MEOW cat Rescue" class="organization-logo">
+                                <h3>MEOW cat Rescue</h3>
+                                <div>
+                                    <button class="button">Site</button>
+                                    <button class="button">Volunteer</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img
+                                    src="https://nami-eastside.org/wp-content/uploads/2021/07/NAMI-EastsideWA-blue-1line-web.png"
+                                    alt="NAMI Eastside" class="organization-logo">
+                                <h3>NAMI Eastside</h3>
+                                <div>
+                                    <button class="button">Site</button>
+                                    <button class="button">Volunteer</button>
+                                </div>
+                            </td>
+                            <td><img src="https://www.navos.org/wp-content/themes/navos/images/logo_navos.png"
+                                     alt="NAVOS" class="organization-logo">
+                                <h3>NAVOS</h3>
+                                <div>
+                                    <button class="button">Site</button>
+                                    <button class="button">Volunteer</button>
+                                </div>
+                            </td>
+                            <td><img
+                                    src="https://ccsww.org/wp-content/uploads/2020/03/CCS-CHS-Serving-Logo-white-1400x497.png"
+                                    alt="New Bethlehem Day Center" class="organization-logo">
+                                <h3>New Bethlehem Day Center</h3>
+                                <div>
+                                    <button class="button">Site</button>
+                                    <button class="button">Volunteer</button>
+                                </div>
+                            </td>
+                            <td><img
+                                    src="https://www.northshoreseniorcenter.org/wp-content/uploads/2020/10/NSC_Logo-Color-WEB.gif"
+                                    alt="Northshore Senior Center" class="organization-logo">
+                                <h3>Northshore Senior Center</h3>
+                                <div>
+                                    <button class="button">Site</button>
+                                    <button class="button">Volunteer</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img
+                                    src="https://images.squarespace-cdn.com/content/v1/5f8e26bab5b49172742ed450/f024c41d-1ecc-4558-ace7-440f37a8425a/NOURISHING+NETWORKS+WEBSITE+LOGO+W+BADGE%2C+black+yellow+300dpi.jpg?format=1500w"
+                                    alt="Nourishing Networks" class="organization-logo">
+                                <h3>Nourishing Networks</h3>
+                                <div>
+                                    <button class="button">Site</button>
+                                    <button class="button">Volunteer</button>
+                                </div>
+                            </td>
+                            <td><img
+                                    src="https://static.wixstatic.com/media/a30f82_5c2ab04621bc48259dd0746ba628e6c3~mv2.png/v1/fill/w_118,h_79,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/OFC_logo_trademark.png"
+                                    alt="Old friends Cub" class="organization-logo">
+                                <h3>Old friends Cub</h3>
+                                <div>
+                                    <button class="button">Site</button>
+                                    <button class="button">Volunteer</button>
+                                </div>
+                            </td>
+                            <td><img
+                                    src="https://static.wixstatic.com/media/663184_dbb0fee7c8bb411eb70285354cc749ca~mv2.png/v1/crop/x_0,y_22,w_500,h_455/fill/w_119,h_107,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/RWR%20Logo%20TRANSParent%202021.png"
+                                    alt="Red Waggin Rescue" class="organization-logo">
+                                <h3>Red Waggin Rescue</h3>
+                                <div>
+                                    <button class="button">Site</button>
+                                    <button class="button">Volunteer</button>
+                                </div>
+                            </td>
+                            <td><img
+                                    src="https://images.squarespace-cdn.com/content/v1/5f8f511e15794e66f46a0ede/1606424815028-DF7XGZOOUXQDTLHX55ZZ/New+RFB+logo.png?format=1500w"
+                                    alt="Renewal Foodbank" class="organization-logo">
+                                <h3>Renewal Foodbank</h3>
+                                <div>
+                                    <button class="button">Site</button>
+                                    <button class="button">Volunteer</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img
+                                    src="https://www.solid-ground.org/wp-content/uploads/2012/03/sg_logo_3color-1-inch.jpg"
+                                    alt="Solid Ground RSVP" class="organization-logo">
+                                <h3>Solid Ground RSVP</h3>
+                                <div>
+                                    <button class="button">Site</button>
+                                    <button class="button">Volunteer</button>
+                                </div>
+                            </td>
+                            <td><img src="https://www.safehorses.org/wp-content/uploads/2010/12/SAFE_logo_Icon.gif"
+                                     alt="Safe Horses" class="organization-logo">
+                                <h3>Safe Horses</h3>
+                                <div>
+                                    <button class="button">Site</button>
+                                    <button class="button">Volunteer</button>
+                                </div>
+                            </td>
+                            <td><img src="https://www.waombudsman.org/wp-content/uploads/sites/94/2022/03/logo.png"
+                                     alt="Sno/Klng Long term Care Ombuds Prgm" class="organization-logo">
+                                <h3>Sno/Klng Long term Care Ombuds Prgm</h3>
+                                <div>
+                                    <button class="button">Site</button>
+                                    <button class="button">Volunteer</button>
+                                </div>
+                            </td>
+                            <td><img
+                                    src="https://soundgenerations.org/wp-content/themes/sg20/img/logo-sound-generations-rev2019_150x113.png"
+                                    alt="Sound Generations" class="organization-logo">
+                                <h3>Sound Generations</h3>
+                                <div>
+                                    <button class="button">Site</button>
+                                    <button class="button">Volunteer</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="https://www.tenthousandvillages.com/media/logo/stores/1/logo-400.png"
+                                     alt="Ten Thousand Villages" class="organization-logo">
+                                <h3>Ten Thousand Villages</h3>
+                                <div>
+                                    <button class="button">Site</button>
+                                    <button class="button">Volunteer</button>
+                                </div>
+                            </td>
+                            <td><img
+                                    src="https://sophiaway.org/wp-content/uploads/2021/02/2021-TSW-logo-for-website-450px.jpg"
+                                    alt="The Sophia Way" class="organization-logo">
+                                <h3>The Sophia Way</h3>
+                                <div>
+                                    <button class="button">Site</button>
+                                    <button class="button">Volunteer</button>
+                                </div>
+                            </td>
+                            <td><img
+                                    src="https://soundgenerations.org/wp-content/themes/sg20/img/logo-sound-generations-rev2019_150x113.png"
+                                    alt="Volunteer Service  -  CCS" class="organization-logo">
+                                <h3>Volunteer Service - CCS</h3>
+                                <div>
+                                    <button class="button">Site</button>
+                                    <button class="button">Volunteer</button>
+                                </div>
+                            </td>
+                            <td><img
+                                    src="https://washingtonautismadvocacy.org/wp-content/uploads/2020/01/waaa_logo_favicon.png"
+                                    alt="Washington Autism Alliance &amp; Advocacy" class="organization-logo">
+                                <h3>Washington Autism Alliance &amp; Advocacy</h3>
+                                <div>
+                                    <button class="button">Site</button>
+                                    <button class="button">Volunteer</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="https://water1st.org/wp-content/uploads/2021/06/W1weblogo-01.svg"
+                                     alt="Water First" class="organization-logo">
+                                <h3>Water First</h3>
+                                <div>
+                                    <button class="button">Site</button>
+                                    <button class="button">Volunteer</button>
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        ;
+    </div>
+</div>
+
+
+<div id="yt_article_summary_widget_wrapper" class="yt_article_summary_widget_wrapper" style="display: none;">
+    <div id="yt_article_summary_widget" class="yt_article_summary_widget">
+        <svg style="filter: brightness(0.8);" width="32" height="32" viewBox="0 0 24 24" fill="none"
+             xmlns="http://www.w3.org/2000/svg">
+            <mask id="path-1-outside-1_3606_3145" maskUnits="userSpaceOnUse" x="1" y="1" width="22" height="22"
+                  fill="black">
+                <rect fill="white" x="1" y="1" width="22" height="22"></rect>
+                <path d="M20.6816 10.1843C20.9588 9.34066 21.0063 8.4399 20.8192 7.57245C20.6321 6.70499 20.217 5.90134 19.6157 5.24216C19.0143 4.58298 18.2478 4.09146 17.393 3.81692C16.5382 3.54238 15.6253 3.49449 14.7459 3.67805C14.1453 3.01747 13.379 2.52468 12.524 2.24931C11.669 1.97394 10.7555 1.92571 9.87559 2.10947C8.99568 2.29324 8.18039 2.70252 7.51181 3.29608C6.84323 3.88965 6.34499 4.64654 6.06725 5.49055C5.18642 5.67292 4.3699 6.08122 3.70003 6.67426C3.03017 7.26731 2.53064 8.02413 2.25182 8.86842C1.97299 9.71271 1.92474 10.6146 2.11192 11.4832C2.2991 12.3517 2.71509 13.1562 3.31795 13.8155C3.09309 14.4899 3.01633 15.2037 3.09278 15.9095C3.16924 16.6154 3.39716 17.2971 3.76139 17.9093C4.30169 18.8351 5.12567 19.568 6.11483 20.0027C7.104 20.4373 8.20738 20.5512 9.26631 20.328C9.74353 20.8568 10.3291 21.2796 10.9844 21.5684C11.6396 21.8571 12.3495 22.0053 13.0672 22.003C14.1516 22.003 15.2081 21.6635 16.0847 21.0334C16.9612 20.4034 17.6125 19.5152 17.9449 18.4968C18.649 18.3539 19.3141 18.0649 19.8962 17.6489C20.4784 17.233 20.9642 16.6997 21.3214 16.0843C21.8585 15.1598 22.0858 14.0915 21.9709 13.032C21.856 11.9724 21.4048 10.9758 20.6816 10.1843ZM13.0798 20.6968C12.191 20.6968 11.3302 20.3894 10.6473 19.828L10.7677 19.7593L14.8029 17.4593C14.9069 17.4047 14.9935 17.3225 15.0528 17.2221C15.1121 17.1216 15.1418 17.0068 15.1386 16.8905V11.2655L16.8427 12.2405C16.8517 12.2441 16.8594 12.2501 16.865 12.2579C16.8706 12.2656 16.8739 12.2748 16.8744 12.2843V16.9343C16.876 17.4289 16.7785 17.9189 16.5875 18.3761C16.3964 18.8333 16.1156 19.2488 15.7611 19.5985C15.4067 19.9482 14.9856 20.2253 14.5222 20.4138C14.0588 20.6023 13.5621 20.6984 13.0608 20.6968H13.0798ZM4.90165 17.2593C4.46164 16.5029 4.3026 15.6189 4.45188 14.7593L4.57224 14.828L8.60749 17.128C8.70379 17.1829 8.81303 17.2118 8.92423 17.2118C9.03543 17.2118 9.14467 17.1829 9.24097 17.128L14.1758 14.3218V16.253C14.1797 16.2608 14.1817 16.2694 14.1817 16.278C14.1817 16.2867 14.1797 16.2953 14.1758 16.303L10.0962 18.628C9.66403 18.8748 9.18685 19.0352 8.69188 19.0999C8.19692 19.1647 7.69387 19.1326 7.21148 19.0055C6.72909 18.8784 6.27681 18.6587 5.88048 18.3591C5.48415 18.0595 5.15154 17.6858 4.90165 17.2593ZM3.83741 8.5843C4.28764 7.82089 4.99655 7.23878 5.83919 6.94055V11.6718C5.83595 11.7857 5.86434 11.8983 5.92128 11.9975C5.97823 12.0966 6.06156 12.1785 6.16227 12.2343L11.0717 15.028L9.36766 16.003C9.34918 16.0092 9.32914 16.0092 9.31065 16.003L5.23106 13.678C4.36041 13.1812 3.72487 12.3642 3.46364 11.4059C3.20242 10.4476 3.33682 9.42624 3.83741 8.56555V8.5843ZM17.8563 11.7968L12.9278 8.9718L14.6319 8.00305C14.6403 7.99741 14.6502 7.99439 14.6604 7.99439C14.6705 7.99439 14.6805 7.99741 14.6889 8.00305L18.7685 10.328C19.3915 10.684 19.8992 11.2072 20.2325 11.8368C20.5659 12.4664 20.7111 13.1764 20.6514 13.8843C20.5916 14.5921 20.3294 15.2687 19.8951 15.8352C19.4608 16.4017 18.8724 16.8349 18.1983 17.0843V12.353C18.1946 12.2391 18.1612 12.1281 18.1013 12.0306C18.0414 11.9332 17.957 11.8527 17.8563 11.7968ZM19.554 9.2968L19.4336 9.2218L15.4047 6.9093C15.3047 6.84846 15.1896 6.81624 15.0721 6.81624C14.9547 6.81624 14.8395 6.84846 14.7396 6.9093L9.8111 9.71555V7.75305C9.8061 7.7445 9.80346 7.7348 9.80346 7.72492C9.80346 7.71505 9.8061 7.70535 9.8111 7.6968L13.897 5.37805C14.5222 5.02257 15.2371 4.85003 15.958 4.88059C16.6789 4.91115 17.3762 5.14356 17.9682 5.55064C18.5601 5.95772 19.0225 6.52265 19.301 7.17939C19.5796 7.83614 19.663 8.55755 19.5413 9.2593L19.554 9.2968ZM8.87989 12.7218L7.1695 11.753C7.15339 11.7405 7.1422 11.7228 7.13782 11.703V7.06555C7.13785 6.35289 7.34371 5.65499 7.73128 5.0536C8.11885 4.45222 8.67209 3.97224 9.32619 3.6699C9.98029 3.36756 10.7082 3.25537 11.4246 3.34647C12.141 3.43757 12.8162 3.7282 13.3712 4.1843L13.2636 4.25305L9.21563 6.55305C9.11158 6.60765 9.02504 6.68981 8.96573 6.79029C8.90642 6.89076 8.87669 7.00557 8.87989 7.1218V12.7218ZM9.80476 10.753L11.9966 9.50305L14.1948 10.753V13.253L11.9966 14.503L9.79843 13.253L9.80476 10.753Z"></path>
+            </mask>
+            <path d="M20.6816 10.1843C20.9588 9.34066 21.0063 8.4399 20.8192 7.57245C20.6321 6.70499 20.217 5.90134 19.6157 5.24216C19.0143 4.58298 18.2478 4.09146 17.393 3.81692C16.5382 3.54238 15.6253 3.49449 14.7459 3.67805C14.1453 3.01747 13.379 2.52468 12.524 2.24931C11.669 1.97394 10.7555 1.92571 9.87559 2.10947C8.99568 2.29324 8.18039 2.70252 7.51181 3.29608C6.84323 3.88965 6.34499 4.64654 6.06725 5.49055C5.18642 5.67292 4.3699 6.08122 3.70003 6.67426C3.03017 7.26731 2.53064 8.02413 2.25182 8.86842C1.97299 9.71271 1.92474 10.6146 2.11192 11.4832C2.2991 12.3517 2.71509 13.1562 3.31795 13.8155C3.09309 14.4899 3.01633 15.2037 3.09278 15.9095C3.16924 16.6154 3.39716 17.2971 3.76139 17.9093C4.30169 18.8351 5.12567 19.568 6.11483 20.0027C7.104 20.4373 8.20738 20.5512 9.26631 20.328C9.74353 20.8568 10.3291 21.2796 10.9844 21.5684C11.6396 21.8571 12.3495 22.0053 13.0672 22.003C14.1516 22.003 15.2081 21.6635 16.0847 21.0334C16.9612 20.4034 17.6125 19.5152 17.9449 18.4968C18.649 18.3539 19.3141 18.0649 19.8962 17.6489C20.4784 17.233 20.9642 16.6997 21.3214 16.0843C21.8585 15.1598 22.0858 14.0915 21.9709 13.032C21.856 11.9724 21.4048 10.9758 20.6816 10.1843ZM13.0798 20.6968C12.191 20.6968 11.3302 20.3894 10.6473 19.828L10.7677 19.7593L14.8029 17.4593C14.9069 17.4047 14.9935 17.3225 15.0528 17.2221C15.1121 17.1216 15.1418 17.0068 15.1386 16.8905V11.2655L16.8427 12.2405C16.8517 12.2441 16.8594 12.2501 16.865 12.2579C16.8706 12.2656 16.8739 12.2748 16.8744 12.2843V16.9343C16.876 17.4289 16.7785 17.9189 16.5875 18.3761C16.3964 18.8333 16.1156 19.2488 15.7611 19.5985C15.4067 19.9482 14.9856 20.2253 14.5222 20.4138C14.0588 20.6023 13.5621 20.6984 13.0608 20.6968H13.0798ZM4.90165 17.2593C4.46164 16.5029 4.3026 15.6189 4.45188 14.7593L4.57224 14.828L8.60749 17.128C8.70379 17.1829 8.81303 17.2118 8.92423 17.2118C9.03543 17.2118 9.14467 17.1829 9.24097 17.128L14.1758 14.3218V16.253C14.1797 16.2608 14.1817 16.2694 14.1817 16.278C14.1817 16.2867 14.1797 16.2953 14.1758 16.303L10.0962 18.628C9.66403 18.8748 9.18685 19.0352 8.69188 19.0999C8.19692 19.1647 7.69387 19.1326 7.21148 19.0055C6.72909 18.8784 6.27681 18.6587 5.88048 18.3591C5.48415 18.0595 5.15154 17.6858 4.90165 17.2593ZM3.83741 8.5843C4.28764 7.82089 4.99655 7.23878 5.83919 6.94055V11.6718C5.83595 11.7857 5.86434 11.8983 5.92128 11.9975C5.97823 12.0966 6.06156 12.1785 6.16227 12.2343L11.0717 15.028L9.36766 16.003C9.34918 16.0092 9.32914 16.0092 9.31065 16.003L5.23106 13.678C4.36041 13.1812 3.72487 12.3642 3.46364 11.4059C3.20242 10.4476 3.33682 9.42624 3.83741 8.56555V8.5843ZM17.8563 11.7968L12.9278 8.9718L14.6319 8.00305C14.6403 7.99741 14.6502 7.99439 14.6604 7.99439C14.6705 7.99439 14.6805 7.99741 14.6889 8.00305L18.7685 10.328C19.3915 10.684 19.8992 11.2072 20.2325 11.8368C20.5659 12.4664 20.7111 13.1764 20.6514 13.8843C20.5916 14.5921 20.3294 15.2687 19.8951 15.8352C19.4608 16.4017 18.8724 16.8349 18.1983 17.0843V12.353C18.1946 12.2391 18.1612 12.1281 18.1013 12.0306C18.0414 11.9332 17.957 11.8527 17.8563 11.7968ZM19.554 9.2968L19.4336 9.2218L15.4047 6.9093C15.3047 6.84846 15.1896 6.81624 15.0721 6.81624C14.9547 6.81624 14.8395 6.84846 14.7396 6.9093L9.8111 9.71555V7.75305C9.8061 7.7445 9.80346 7.7348 9.80346 7.72492C9.80346 7.71505 9.8061 7.70535 9.8111 7.6968L13.897 5.37805C14.5222 5.02257 15.2371 4.85003 15.958 4.88059C16.6789 4.91115 17.3762 5.14356 17.9682 5.55064C18.5601 5.95772 19.0225 6.52265 19.301 7.17939C19.5796 7.83614 19.663 8.55755 19.5413 9.2593L19.554 9.2968ZM8.87989 12.7218L7.1695 11.753C7.15339 11.7405 7.1422 11.7228 7.13782 11.703V7.06555C7.13785 6.35289 7.34371 5.65499 7.73128 5.0536C8.11885 4.45222 8.67209 3.97224 9.32619 3.6699C9.98029 3.36756 10.7082 3.25537 11.4246 3.34647C12.141 3.43757 12.8162 3.7282 13.3712 4.1843L13.2636 4.25305L9.21563 6.55305C9.11158 6.60765 9.02504 6.68981 8.96573 6.79029C8.90642 6.89076 8.87669 7.00557 8.87989 7.1218V12.7218ZM9.80476 10.753L11.9966 9.50305L14.1948 10.753V13.253L11.9966 14.503L9.79843 13.253L9.80476 10.753Z"
+                  fill="#828282"></path>
+            <path d="M20.6816 10.1843C20.9588 9.34066 21.0063 8.4399 20.8192 7.57245C20.6321 6.70499 20.217 5.90134 19.6157 5.24216C19.0143 4.58298 18.2478 4.09146 17.393 3.81692C16.5382 3.54238 15.6253 3.49449 14.7459 3.67805C14.1453 3.01747 13.379 2.52468 12.524 2.24931C11.669 1.97394 10.7555 1.92571 9.87559 2.10947C8.99568 2.29324 8.18039 2.70252 7.51181 3.29608C6.84323 3.88965 6.34499 4.64654 6.06725 5.49055C5.18642 5.67292 4.3699 6.08122 3.70003 6.67426C3.03017 7.26731 2.53064 8.02413 2.25182 8.86842C1.97299 9.71271 1.92474 10.6146 2.11192 11.4832C2.2991 12.3517 2.71509 13.1562 3.31795 13.8155C3.09309 14.4899 3.01633 15.2037 3.09278 15.9095C3.16924 16.6154 3.39716 17.2971 3.76139 17.9093C4.30169 18.8351 5.12567 19.568 6.11483 20.0027C7.104 20.4373 8.20738 20.5512 9.26631 20.328C9.74353 20.8568 10.3291 21.2796 10.9844 21.5684C11.6396 21.8571 12.3495 22.0053 13.0672 22.003C14.1516 22.003 15.2081 21.6635 16.0847 21.0334C16.9612 20.4034 17.6125 19.5152 17.9449 18.4968C18.649 18.3539 19.3141 18.0649 19.8962 17.6489C20.4784 17.233 20.9642 16.6997 21.3214 16.0843C21.8585 15.1598 22.0858 14.0915 21.9709 13.032C21.856 11.9724 21.4048 10.9758 20.6816 10.1843ZM13.0798 20.6968C12.191 20.6968 11.3302 20.3894 10.6473 19.828L10.7677 19.7593L14.8029 17.4593C14.9069 17.4047 14.9935 17.3225 15.0528 17.2221C15.1121 17.1216 15.1418 17.0068 15.1386 16.8905V11.2655L16.8427 12.2405C16.8517 12.2441 16.8594 12.2501 16.865 12.2579C16.8706 12.2656 16.8739 12.2748 16.8744 12.2843V16.9343C16.876 17.4289 16.7785 17.9189 16.5875 18.3761C16.3964 18.8333 16.1156 19.2488 15.7611 19.5985C15.4067 19.9482 14.9856 20.2253 14.5222 20.4138C14.0588 20.6023 13.5621 20.6984 13.0608 20.6968H13.0798ZM4.90165 17.2593C4.46164 16.5029 4.3026 15.6189 4.45188 14.7593L4.57224 14.828L8.60749 17.128C8.70379 17.1829 8.81303 17.2118 8.92423 17.2118C9.03543 17.2118 9.14467 17.1829 9.24097 17.128L14.1758 14.3218V16.253C14.1797 16.2608 14.1817 16.2694 14.1817 16.278C14.1817 16.2867 14.1797 16.2953 14.1758 16.303L10.0962 18.628C9.66403 18.8748 9.18685 19.0352 8.69188 19.0999C8.19692 19.1647 7.69387 19.1326 7.21148 19.0055C6.72909 18.8784 6.27681 18.6587 5.88048 18.3591C5.48415 18.0595 5.15154 17.6858 4.90165 17.2593ZM3.83741 8.5843C4.28764 7.82089 4.99655 7.23878 5.83919 6.94055V11.6718C5.83595 11.7857 5.86434 11.8983 5.92128 11.9975C5.97823 12.0966 6.06156 12.1785 6.16227 12.2343L11.0717 15.028L9.36766 16.003C9.34918 16.0092 9.32914 16.0092 9.31065 16.003L5.23106 13.678C4.36041 13.1812 3.72487 12.3642 3.46364 11.4059C3.20242 10.4476 3.33682 9.42624 3.83741 8.56555V8.5843ZM17.8563 11.7968L12.9278 8.9718L14.6319 8.00305C14.6403 7.99741 14.6502 7.99439 14.6604 7.99439C14.6705 7.99439 14.6805 7.99741 14.6889 8.00305L18.7685 10.328C19.3915 10.684 19.8992 11.2072 20.2325 11.8368C20.5659 12.4664 20.7111 13.1764 20.6514 13.8843C20.5916 14.5921 20.3294 15.2687 19.8951 15.8352C19.4608 16.4017 18.8724 16.8349 18.1983 17.0843V12.353C18.1946 12.2391 18.1612 12.1281 18.1013 12.0306C18.0414 11.9332 17.957 11.8527 17.8563 11.7968ZM19.554 9.2968L19.4336 9.2218L15.4047 6.9093C15.3047 6.84846 15.1896 6.81624 15.0721 6.81624C14.9547 6.81624 14.8395 6.84846 14.7396 6.9093L9.8111 9.71555V7.75305C9.8061 7.7445 9.80346 7.7348 9.80346 7.72492C9.80346 7.71505 9.8061 7.70535 9.8111 7.6968L13.897 5.37805C14.5222 5.02257 15.2371 4.85003 15.958 4.88059C16.6789 4.91115 17.3762 5.14356 17.9682 5.55064C18.5601 5.95772 19.0225 6.52265 19.301 7.17939C19.5796 7.83614 19.663 8.55755 19.5413 9.2593L19.554 9.2968ZM8.87989 12.7218L7.1695 11.753C7.15339 11.7405 7.1422 11.7228 7.13782 11.703V7.06555C7.13785 6.35289 7.34371 5.65499 7.73128 5.0536C8.11885 4.45222 8.67209 3.97224 9.32619 3.6699C9.98029 3.36756 10.7082 3.25537 11.4246 3.34647C12.141 3.43757 12.8162 3.7282 13.3712 4.1843L13.2636 4.25305L9.21563 6.55305C9.11158 6.60765 9.02504 6.68981 8.96573 6.79029C8.90642 6.89076 8.87669 7.00557 8.87989 7.1218V12.7218ZM9.80476 10.753L11.9966 9.50305L14.1948 10.753V13.253L11.9966 14.503L9.79843 13.253L9.80476 10.753Z"
+                  stroke="#828282" stroke-width="0.2" mask="url(#path-1-outside-1_3606_3145)"></path>
+        </svg>
+    </div>
+    <div id="yt_article_summary_close_button" class="yt_article_summary_close_button">×</div>
+</div>
+</body>
+</html>

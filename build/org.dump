@@ -1,0 +1,98 @@
+--
+-- PostgreSQL database dump
+--
+
+-- Dumped from database version 13.20 (Debian 13.20-0+deb11u1)
+-- Dumped by pg_dump version 13.20 (Debian 13.20-0+deb11u1)
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET xmloption = content;
+SET client_min_messages = warning;
+SET row_security = off;
+
+SET default_tablespace = '';
+
+SET default_table_access_method = heap;
+
+--
+-- Name: organizations; Type: TABLE; Schema: public; Owner: steve
+--
+
+CREATE TABLE public.organizations (
+    name character varying(255),
+    address character varying(255),
+    contact character varying(255),
+    phone character varying(255),
+    email character varying(255),
+    website character varying(255),
+    volunteerpage character varying(255),
+    logopage character varying(255),
+    activities character varying(255),
+    courtordered character varying(255)
+);
+
+
+ALTER TABLE public.organizations OWNER TO steve;
+
+--
+-- Data for Name: organizations; Type: TABLE DATA; Schema: public; Owner: steve
+--
+
+COPY public.organizations (name, address, contact, phone, email, website, volunteerpage, logopage, activities, courtordered) FROM stdin;
+Attain Housing	125 Slate Street South  Kirkland, WA   98033	Jesse Perrell	425.576.9531 X 105	jesse@attainhousing.org	https://www.attainhousing.org	https://www.attainhousing.org/how-you-can-help/volunteer	https://www.attainhousing.org/wp-content/uploads/2019/02/attainlogo.png	\N	false
+Big Brother. Big Sister.;	1600South Graham St;  Seattle, WA   98108	Michelle Raibback	425.894.7231	info@washingtonadvocacy.org	https://inspirebig.org	https://inspirebig.org/volunteer-2-2/	https://inspirebig.org/wp-content/uploads/2019/05/LogoBBBSPS-250.png	\N	false
+Catholic Community Services	100 23rd AVE; Seattle, WA  98144	Holliane Monson Griffin Cole	206.328.6853	hollannemo@ccsww.org	https://ccsww.org 	https://ccsww.org/volunteer/	https://ccsww.org/wp-content/uploads/2020/03/CCS-CHS-Serving-Logo-white-1400x497.png	\N	false
+City of Kirkland Volunteers	123 Fifth AVE; Kirkland,WA   98033	Patrick Tefft	425.587.3012	tefft@kirklandwa.gov	https://www.kirklandwa.gov/Resident/Volunteer	https://www.kirklandwa.gov/Government/City-Managers-Office/Volunteer-Opportunities/Volunteer-Application-On-going	https://pbs.twimg.com/media/Fm9DtTPakAEBVLC?format=jpg&name=900x900	\N	false
+City of Bellevue	450 110th Avenue NE Bellevue, WA 98004	servicefirst@bellevuewa.gov	425-452-6800	servicefirst@bellevuewa.gov	https://bellevuewa.gov/sites/default/files/media/pdf_document/Volunteer-Resource-Guide.pdf	https://bellevuewa.gov/volunteering	https://cdn.cybergolf.com/images/2279/City-of-Bellevue.jpg	\N	true
+Eastside Audubon	PO Box 3115 Kirkland WA   98083	Tereza Marks	425.576.8805	office@eastsideaudubon.org	https://www.eastsideaudubon.org	https://www.eastsideaudubon.org/volunteer	https://images.squarespace-cdn.com/content/v1/5a6390338a02c77bf05da4ab/1536454443108-JCZDUPAORSFUCQ2YROR3/eas-logo-white.png?format=1500w	\N	false
+Eastside Community Thrift Shop	12421 116th AVE NE Kirkland, WA   98034	Gail Schroder	425.825.1877	gailschroder3@gmail.com	https://www.eastsidecommunityaidthriftshop.org	https://www.eastsidecommunityaidthriftshop.org/volunteer	https://images.squarespace-cdn.com/content/v1/62117707242ba27822d602e1/dd9efdeb-f3c0-40a6-931f-00085ca74b80/ECATS_Logo_150dpi_BLACKWHITE.png?format=1500w	\N	false
+Eastside Neighbors Network	10005 NE 16tll PL Bellevue, WA 98004	Lorene Sheppard	425.455.0456	loreneshr@msn.com	https://www.eastsideneighborsnetwork.org	https://www.eastsideneighborsnetwork.org/pages/10010-volunteer-opportunities	/ENN_SiteLogo.png	\N	false
+Evergreen Health Volunteer Service	U040 NE 128th Street;  Kirkland, WA   98034	Karen Liebel	425.899.2296	kleliebel@evergreenhealth.com	https://www.evergreenhealth.com/about-us/volunteer	https://www.evergreenhealth.com/about-us/volunteer/	https://www.evergreenhealth.com/app/files/public/3684/Evergreen-Logo.svg	\N	false
+Gentiva Hospice	115 NE 100th St, #210 Seattle,WA98U5	Jemilla Goldstein	206.525.1090	jemilla.goldstein@gentivea.com	https://www.gentivahsp.com	\N	https://www.gentivahsp.com/images/logo-kindred-gentiva.svg	\N	false
+Green Kirkland Partnership	U3FifthAVE; Kirkland, WA   98033	Jeremy Jones	425.587.3306	jiones@kirklandwa.gov	https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Green-Kirkland-Partnership	https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Green-Kirkland-Partnership	https://pbs.twimg.com/media/Fm9DtTPakAEBVLC?format=jpg&name=900x900	\N	false
+Habitat for Humanity Intl.	113013rd AVE NE11555; Seattle, WA  98125	Jessie Strauss	206.788.4755	jessie@jessiestrauss..com	https://www.habitat.org	https://www.habitat.org/volunteer/long-term-opportunities/international	https://www.habitatskc.org/wp-content/uploads/2022/01/header-home-family-1a-2048x1307.jpg	\N	false
+Habitat for Humanity King County	560 Naches AVE SW, #110; Renton , WA 98057	Nicole Anderson	206.577.7919	nicole.inderson@habitatskc.org	https://www.habitatskc.org	https://www.habitatskc.org/how-to-help/volunteer/	https://www.habitatskc.org/wp-content/uploads/2022/01/header-home-family-1a-2048x1307.jpg	\N	false
+Homeward Pet Adoption Center	13132 NE 177th PL Woodinville, WA  98072	Linda Trendier	425.48B.4444	volunteers@homeward.org	https://home-home.org	https://home-home.org/contact	https://home-home.s3.amazonaws.com/wp-content/uploads/2021/08/logo-global.svg	\N	false
+Hopelink	8990 154tll Ave NE; WA   98052	Liz Waesc:he	425.869.6066	volunteerwithus@hopelink.org	https://www.hopelink.org/service-center/bellevue	https://www.hopelink.org/take-action/volunteer	https://www.hopelink.org/sites/default/files/hopelink-logo_0.png	\N	false
+Imagine Housing	10604 NE 38th Place, STE 215; Kirkland, WA  98033	NicoleJobson	425.576.5190 ex 20	nicolej@iimaginehousing.org	https://imaginehousing.org	https://imaginehousing.org/get-involved/volunteer/	https://imaginehousing.org/wp-content/themes/imagine/assets/imagine-logo.svg	\N	false
+Kirkland Downtown	440 Central way WA   98033	Barbie Conins Young	425.822.7066	barbiey@kirklanddowntown.org	https://kirklanddowntown.org	https://kirklanddowntown.org/volunteer/	https://kirklanddowntown.org/wp-content/uploads/2022/03/kda-logo-white.png	\N	false
+Kirkland Boys & Girls Club	10805124th Ave NE Kirkland, WA   98033	Casev Hewes	425.250.4755	chewes@positiveplace.org	https://positiveplace.org/clubs/kirkland	https://positiveplace.org/volunteer-overview/	https://positiveplace.org/wp-content/uploads/2022/12/bgckc-logo-600.png	\N	false
+Kirkland Kiwanis	375 Kirkland Ave, #232; Kirkland, WA  98033	Hal Bomgardner	425.890.7854	halbom@hotmail.com	https://k03048.site.kiwanis.org	https://k03048.site.kiwanis.org/7h-volunteer/	https://dwyq4sa1lz55y.cloudfront.net/uploads/sites/635/2019/02/logo-2.png	\N	false
+Kirkland Performing Arts Center	350 Kirkland Avenue;     Kirkland, WA   98033	Jacob Gannon	425.828.0422 x229	jacob@kpccenter.org	https://www.kpcenter.org	https://k03048.site.kiwanis.org/7h-volunteer/	https://www.kpcenter.org/wp-content/themes/kpc/images/logo.png	\N	false
+Kiwanis Kirkland Sunrisers Club	POBoxl377 Mercer Island, WA  98040	CirolMahonev Shular	360.434.1377 425.883.6224	carolmahoneyl2@yahoo.com	https://k03048.site.kiwanis.org	https://www.kpcenter.org/wp-content/themes/kpc/images/logo.png	https://dwyq4sa1lz55y.cloudfront.net/uploads/sites/635/2019/02/logo-2.png	\N	false
+Lake Washington Schools Foundation	POBox83; Redmond, WA  98073	Katy Philips	425.936.1317	info@lwsf.org	https://www.lwsd.org/get-involved/volunteering-in-lwsd/links-volunteer-program	https://www.lwsd.org/get-involved/volunteering-in-lwsd/links-volunteer-program	https://media.licdn.com/dms/image/C4E0BAQG1d0CNRQKiVg/company-logo_200_200/0/1519856230205?e=2147483647&v=beta&t=ojazNLHtApeMMO5Sfz-axaDZGs0dsfhU5a3Lw_0G3ww	\N	false
+LINKS	16250 NE 74tli Street; Redmond, WA   98052	Victoria Goetze-Nelson	425.936.1410	vgoetzenelson@lwsd.org	https://www.lwsd.org/get-involved/volunteering-in-lwsd/links-volunteer-program	https://www.lwsd.org/get-involved/volunteering-in-lwsd/links-volunteer-program	https://media.licdn.com/dms/image/C4E0BAQG1d0CNRQKiVg/company-logo_200_200/0/1519856230205?e=2147483647&v=beta&t=ojazNLHtApeMMO5Sfz-axaDZGs0dsfhU5a3Lw_0G3ww	\N	false
+Mary's Place	\N	Megan Husko Elspeth Rensema	206.621.8474	megan@marysplaceseattle.org	https://www.marysplaceseattle.org	https://www.marysplaceseattle.org/volunteer	https://images.squarespace-cdn.com/content/v1/5b8989d231d4df1bccd7bcc7/277f988a-7b12-4d4d-91b4-e6eb73aa10ad/Mary%27s+Place+Primary+Mark+-+Dawn.png?format=1500w	\N	false
+MEOW cat Rescue	10600 NE 68th Street, fff; Kirkland, WA  98033	Nydia White	425.822.6369	info@meowcatrescue.org	https://meowcatrescue.org	https://meowcatrescue.org/volunteer/	https://meowcatrescue.org/wp-content/uploads/2020/09/cropped-LongLogoDraft6c.jpg	\N	false
+NAMI Eastside	16225 NE j17th Street,STE A-9 Redmond, WA   98052	Michele Meaker Sanpson Ayele	425.885.6264	michele@nami--eastside.org	https://nami-eastside.org	https://nami-eastside.org/volunteer	https://nami-eastside.org/wp-content/uploads/2021/07/NAMI-EastsideWA-blue-1line-web.png	\N	false
+NAVOS	1210 SW 136th Street   Burien, WA  98166	UsaHav	206.933.7196	Usahav@navos.org	https://www.navos.org	https://www.navos.org/give-help/	https://www.navos.org/wp-content/themes/navos/images/logo_navos.png	\N	false
+New Bethlehem Day Center	11920 NE 80St, #100; Kirkland, WA	\N	425.679.0350	volunteer@nbshelter.org	https://ccsww.org/get-help/shelter-homeless-services/new-bethlehem	https://ccsww.org/volunteer/	https://ccsww.org/wp-content/uploads/2020/03/CCS-CHS-Serving-Logo-white-1400x497.png	\N	false
+Northshore Senior Center	10201 East Riverside Drive; Bothell, WA  98011	\N	425.286.1032	volunteer@mynorthshore.org	https://www.northshoreseniorcenter.org/	https://www.northshoreseniorcenter.org/get-involved/	https://www.northshoreseniorcenter.org/wp-content/uploads/2020/10/NSC_Logo-Color-WEB.gif	\N	false
+Nourishing Networks	\N	Toby Nixon	\N	toby@tobyunixon.com	https://www.nourishingnetworks.net/networks/kirkland	https://www.nourishingnetworks.net/kirkland/give-help/food	https://images.squarespace-cdn.com/content/v1/5f8e26bab5b49172742ed450/f024c41d-1ecc-4558-ace7-440f37a8425a/NOURISHING+NETWORKS+WEBSITE+LOGO+W+BADGE%2C+black+yellow+300dpi.jpg?format=1500w	\N	false
+Old friends Cub	1715 228th AVE SE Samamaish, WA  98075	Karen Koenis	425.681.9776	karen@oldfriendsclub.org	https://www.oldfriendsclub.org	https://www.oldfriendsclub.org/volunteer	https://static.wixstatic.com/media/a30f82_5c2ab04621bc48259dd0746ba628e6c3~mv2.png/v1/fill/w_118,h_79,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/OFC_logo_trademark.png	\N	false
+Peoples Harm Reduction	P.O. Box 85038 Seattle, WA  98145	info@phra.org	(206) 939-2209	info@phra.org	https://phra.org	https://phra.org/volunteer	https://process.filestackapi.com/resize=w:180,h:128/quality=value:70/output=format:webp/cache=expiry:31536000/compress/no_metadata/xY4k7IacROKtpdDMxHLJ	\N	true
+Red Waggin Rescue	422 13th Ave West WA   98033	Peggy Adams	206.335.2826	connellpetilrescue@gmail.com	https://www.redwagginrescue.org	https://www.redwagginrescue.org/volunteer	https://static.wixstatic.com/media/663184_dbb0fee7c8bb411eb70285354cc749ca~mv2.png/v1/crop/x_0,y_22,w_500,h_455/fill/w_119,h_107,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/RWR%20Logo%20TRANSParent%202021.png	\N	false
+Renewal Foodbank	15022 Bet-Red Road; Bellevue, WA  98007	Rich Bowen	425.736.8132	\N	https://renewalfoodbank.org	https://renewalfoodbank.org/get-involved	https://images.squarespace-cdn.com/content/v1/5f8f511e15794e66f46a0ede/1606424815028-DF7XGZOOUXQDTLHX55ZZ/New+RFB+logo.png?format=1500w	\N	false
+Solid Ground RSVP	1501N 45th Street; Seattle, WA   98103	Jan Hancock	206.694.6786	janh@lsolidgrour.d.org	https://www.solid-ground.org	https://www.solid-ground.org/get-involved/rsvp	https://www.solid-ground.org/wp-content/uploads/2012/03/sg_logo_3color-1-inch.jpg	\N	false
+Safe Horses	10407192nd Ave NE WA   98053	Tiffany lindan	425.802.4866	tiffanny@safehorses.org	https://www.safehorses.org	https://www.safehorses.org/you_can_help/volunteer/	https://www.safehorses.org/wp-content/uploads/2010/12/SAFE_logo_Icon.gif	\N	false
+Long term Care Ombuds Prgm	PO Box23699 Federal Way, WA  98093	Jamie Burrk	253.815.8173	jaimec@mschelps.org	https://www.waombudsman.org	https://www.waombudsman.org/support-us/volunteer/	https://www.waombudsman.org/wp-content/uploads/sites/94/2022/03/logo.png	\N	false
+Sound Generations	2208 Second Ave, STE 100; Seattle, WA   98121	Omar Vazquez	206.748.7588	omarv@soundgenerations.org	https://soundgenerations.org/	https://soundgenerations.org/get-involved/volunteer/	https://soundgenerations.org/wp-content/themes/sg20/img/logo-sound-generations-rev2019_150x113.png	\N	false
+Ten Thousand Villages	6417 Roosevelt Way NE ff201 Seattle, WA 98115	Stephanie Cilnek	425.273.1924	seattle@tenthousandvillages.com	https://www.tenthousandvillages.com	mailto:seattle@tenthousandvillages.com	https://www.tenthousandvillages.com/media/logo/stores/1/logo-400.png	\N	false
+The Sophia Way	11061NE Second Street; Bellevue, WA   98004	Tara Noyes	425.463.6285	volunteer@sophiaway.org	https://sophiaway.org	https://sophiaway.org/volunteer/	https://sophiaway.org/wp-content/uploads/2021/02/2021-TSW-logo-for-website-450px.jpg	\N	false
+University Food Bank	5017 Roosevelt Way NE Seattle WA 98105	https://www.udistrictfoodbank.org/about/contact/	(206) 523-7060	servicefirst@bellevuewa.gov	https://www.udistrictfoodbank.org	https://www.udistrictfoodbank.org/involved/	https://www.udistrictfoodbank.org/wp-content/uploads/layout-logo.png	\N	true
+Volunteer Service  -  CCS	11061NE Second Street; Bellevue, WA  98004	Griffin Cole	425.679.0342	griffinc@ccsww.org	https://soundgenerations.org/	https://soundgenerations.org/get-involved/volunteer/	https://soundgenerations.org/wp-content/themes/sg20/img/logo-sound-generations-rev2019_150x113.png	\N	false
+Washington Autism Alliance	16625 NE 87tli Street, STE A-2; Redmond, VA  98052	Jason Ford	425.894.7231	info@washingtonautismadvocacy.org/	https://washingtonautismadvocacy.org	https://washingtonautismadvocacy.org/volunteer/	https://washingtonautismadvocacy.org/wp-content/uploads/2020/01/waaa_logo_favicon.png	\N	false
+Water First	\N	Kirk Anderson	206.297.3024	klrkar.derson@water1st.org  info®waterlst.orast.orast.oraswater1t.oorg	https://water1st.org	https://water1st.org/get-involved	https://water1st.org/wp-content/uploads/2021/06/W1weblogo-01.svg	\N	false
+\.
+
+
+--
+-- PostgreSQL database dump complete
+--
+

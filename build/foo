@@ -1,0 +1,1 @@
+COPY organizations FROM 'VivaVolunteersOrganizations.tsv' WITH (FORMAT csv, DELIMITER E'\t', HEADER true);
