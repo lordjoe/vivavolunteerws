@@ -1,7 +1,0 @@
-services:
-  - type: web
-    name: vivavolunteers
-    env: static
-    buildCommand: ""
-    staticPublishPath: ./build
-    pullRequestPreviewsEnabled: false
