@@ -5,7 +5,7 @@ import {FilenameHolder} from "./Holders";
 
 
 
-import  Filters   from './Filters';
+// import  Filters   from './Filters';
 import PersistentObject from "./PersistentObject";
 import OrganizationJSON from "./OrganizationJSON";
 import  OrganizationTable from "./OrganizationTable";

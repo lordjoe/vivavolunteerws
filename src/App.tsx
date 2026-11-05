@@ -8,7 +8,6 @@ import OrganizationJSON from "./OrganizationJSON";
 import FilterButtons from "./FilterButtons";
 import VivaVolunteers from "./VivaVolunteers";
 
-const VIVA_VOLUNTEERS_JSON = "https://drive.google.com/file/d/1vFYfCjXYBdjgBynUhfbUZP-D9FIF51vS/view?usp=drive_link";
 const VIVA_VOLUNTEERS_JSON2 = "/VivaVolunteersOrganizations.json";
 
 function asOrganization(me: OrganizationJSON) : Organization {

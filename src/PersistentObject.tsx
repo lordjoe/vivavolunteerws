@@ -1,7 +1,5 @@
 
-import React, {useEffect, useState} from 'react';
 import Organization from "./Organization";
-import organization from "./Organization";
 
  class PersistentObject{
     private static instance: PersistentObject;
